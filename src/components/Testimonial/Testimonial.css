@@ -1,0 +1,126 @@
+.testimonials{
+    width: 80%;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(var(--primary-color) 50% 50%, var(--secondary-color) 50%);
+}
+
+
+.testimonials .arrow-left,
+.testimonials .arrow-right{
+    position: absolute;
+    background: var(--secondary-color);
+    padding: 10px;
+    border-radius: 50px;
+    width: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+.testimonials .arrow-right{
+    right: 0;
+}
+
+
+.testimonials .slider{
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    justify-self: center;
+    transition: 1s;
+  
+}
+
+
+.testimonials .slider .slide{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 10px;
+}
+
+.slide .content{
+    width: 70%;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+}
+
+.testifier{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.testifier .img{
+    height: 70px;
+    width: 70px;
+    min-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px dashed var(--white-color);
+}
+
+.testifier .img img{
+    width: 100%;
+}
+
+
+.testifier-info h4{
+    color: var(--white-color);
+    font-size: 25px;
+    opacity: 0.8=9;
+}
+
+.testifier-info span{
+    color: var(--white-color);
+    opacity: 0.8;
+}
+
+
+.testimony{
+    color: var(--white-color);
+    opacity: 0.8;
+}
+
+
+/***********Media Query*****************/
+@media (max-width:768px){
+    .testimonials{
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px){
+    .testifier{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .testifier-info{
+        width: 100%;
+        text-align: center;
+    }
+
+    .testifier-info h4{
+        font-size: 20px;
+    }
+
+    .testimonials .slider .slide{
+        margin: 20px 0;
+    }
+
+    .slide .content{
+        width: 85%;
+    }
+}
+

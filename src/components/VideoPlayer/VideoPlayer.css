@@ -1,0 +1,22 @@
+.video-player{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background: rgba(0,0,0,0.9);
+}
+
+.video-player.hide{
+    display: none;
+}
+
+.video-player video{
+    height: auto;
+    max-height: 95%;
+    width: 90%;
+    border-radius: 5px;
+}

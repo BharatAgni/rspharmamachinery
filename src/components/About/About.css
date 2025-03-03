@@ -1,0 +1,235 @@
+.about {
+    margin-top: 150px;
+    padding: 50px 10%;
+    width: 100%;
+    background: linear-gradient(var(--secondary-color) 34%, var(--primary-color) 34% 63%, var(--secondary-color) 63%);
+}
+
+.about .title {
+    margin-top: 0;
+}
+
+.about-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.about-top .item-left {
+    flex-basis: 48%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.about-top .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    /* background: rgba(0, 0, 0, 0.6); */
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.about-top .play-icon img {
+    width: 60px;
+    border-radius: inherit;
+    background-color: var(--secondary-color);
+}
+
+.about-top .play-icon::before {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: var(--white-color);
+    animation: animateplay 2s infinite;
+}
+
+/* .about-top .play-icon .arrow {
+    font-size: 22px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+} */
+
+/* .about-top .play-icon:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.about-top .play-icon:hover .arrow {
+    transform: translateX(-8px);
+} */
+
+@keyframes animateplay {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        width: 150%;
+        height: 150%;
+        opacity: 0;
+    }
+}
+
+.about-top img {
+    width: 100%;
+}
+
+.about-top .item-right {
+    flex-basis: 48%;
+}
+
+/* .about-top .item-right * {
+    color: var(--white-color);
+} */
+
+.about-top .item-right p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.about-middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-middle .item {
+    overflow: hidden;
+    flex-basis: 24%;
+    height: 300px;
+}
+
+.about-middle img {
+    width: 100%;
+}
+
+.about-middle .item:nth-child(2),
+.about-middle .item:nth-child(4) {
+    margin-top: 100px;
+}
+
+.about-bottom {
+    margin-top: 70px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.about-bottom .item {
+    flex-basis: 24%;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    background: var(--white-color);
+}
+
+.about-bottom .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    background-color: var(--primary-color);
+}
+
+.about-bottom .icon img {
+    width: 50px;
+}
+
+.about-bottom h3 {
+    text-align: center;
+    margin: 15px auto;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.about-bottom p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1204px) {
+    .about-middle .item {
+        height: 280px;
+    }
+}
+
+@media (max-width: 911px) {
+    .about-middle {
+        flex-wrap: wrap;
+    }
+
+    .about-middle .item {
+        flex: 48.5%;
+        margin-bottom: 15px;
+        height: 350px;
+    }
+
+    .about-middle .item:nth-child(2),
+    .about-middle .item:nth-child(4) {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-bottom {
+        flex-wrap: wrap;
+    }
+
+    .about-bottom .item {
+        flex-basis: 48.5%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-top {
+        flex-wrap: wrap;
+    }
+
+    .about-top .item-left,
+    .about-top .item-right {
+        flex-basis: 100%;
+    }
+
+    .about-top .item-left {
+        order: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-middle .item {
+        height: 400px;
+        flex-basis: 100%;
+    }
+
+    .about-bottom .item {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 525px) {
+    .about-top .item-left {
+        height: 350px;
+    }
+}
+
+
+
+

@@ -1,0 +1,16 @@
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    /* color: var(--secondary-color); */
+    margin: 40px auto 5px;
+    text-align: center;
+}
+
+.title-text{
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 31px;
+    margin: 20px 0px 10px;
+    font-weight: 400;
+}
+

@@ -1,0 +1,205 @@
+/* ================= Product Page Styling ================= */
+
+.product-page {
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #88aaa7); 
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.product-container {
+    max-width: 900px;
+    margin: 50px auto;
+    margin-top: 5%;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.product-container:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+}
+
+.product-container h1 {
+    font-size: 32px;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 18px;
+    padding: 12px;
+    background: linear-gradient(90deg, #ff5733, #ff8c42);
+    color: white;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    margin: 25px 0;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-image:hover {
+    transform: scale(1.08);
+}
+
+.product-container p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.product-container h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #000000;
+}
+
+.product-container ul {
+    list-style-type: disc; /* ✅ Bullet points added */
+    padding-left: 20px; /* ✅ Left align properly */
+    text-align: left; /* ✅ Ensures left alignment */
+}
+
+.product-container ul li {
+    font-size: 17px;
+    color: #444;
+    padding: 8px 0;
+    border-bottom: none; /* ✅ Removed underline */
+}
+
+/* ================= Specifications Styling ================= */
+.specifications {
+    margin-top: 22px;
+    padding: 18px;
+    background: #f1f1f1;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.specifications h3 {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.specifications ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.specifications ul li {
+    font-size: 17px;
+    color: #000000;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.specifications ul li:last-child {
+    border-bottom: none;
+}
+
+/* ================= Product Not Found Styling ================= */
+.not-found-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.not-found-container h2 {
+    font-size: 26px;
+    color: red;
+}
+
+.not-found-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.back-home {
+    text-decoration: none;
+    color: white;
+    background: #ff5733;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.back-home:hover {
+    background: #e04a2b;
+}
+
+/* ================= Fullscreen Image Modal ================= */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.modal-content img {
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* ================= Responsive Design for Mobile ================= */
+@media (max-width: 768px) {
+    .product-container {
+        max-width: 95%;
+        padding: 18px;
+        margin-top: 25%;
+    
+    }
+    
+    .product-container h1 {
+        font-size: 26px;
+        padding: 10px;
+    }
+    
+    .product-container p {
+        font-size: 16px;
+    }
+    
+    .product-image {
+        max-width: 100%;
+    }
+    
+    .product-container ul li {
+        font-size: 15px;
+    }
+
+    .modal-content img {
+        max-width: 95%;
+        max-height: 85vh;
+    }
+}
+
+

@@ -1,0 +1,72 @@
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+// Components
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import Presence from './components/Presence/Presence';
+import About from './components/About/About';
+import AboutUs from './components/AboutUs/AboutUs';
+import VideoPlayer from './components/VideoPlayer/VideoPlayer';
+import Gallery from './components/Gallery/Gallery';
+import GalleryPhotos from './components/GalleryPhotos/GalleryPhotos';
+import AboutDetails from './components/AboutDetails/AboutDetails';
+import Title from './components/Title/Title';
+import Clients from './components/Clients/Clients';
+import Testimonial from './components/Testimonial/Testimonial';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+
+// ✅ Product Page Component
+import ProductPage from "./components/pages/ProductPage";
+
+function App() {
+  const [hideVideoPlayer, setHideVideoPlayer] = useState(true);
+  const [hideGallery, setHideGallery] = useState(true);
+
+  return (
+    <Router>
+      <div className="APP">
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Presence />
+                <About setHideVideoPlayer={setHideVideoPlayer} />
+                <Gallery setHideGallery={setHideGallery} />
+                <AboutDetails />
+                <Title title="Industries" titleText="Explore More About Industries" />
+                <Clients />
+                <Testimonial />
+              </>
+            }
+          />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<AboutUs />} />
+
+          {/* ✅ Fixed Product Pages Route */}
+          <Route path="/products/:category/:productId" element={<ProductPage />} />
+        </Routes>
+        <Footer />
+
+        {/* ✅ Gallery & Video Player */}
+        {!hideGallery && <GalleryPhotos hideGallery={hideGallery} setHideGallery={setHideGallery} />}
+        <VideoPlayer hideVideoPlayer={hideVideoPlayer} setHideVideoPlayer={setHideVideoPlayer} />
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+

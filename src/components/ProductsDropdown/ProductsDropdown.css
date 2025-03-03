@@ -1,0 +1,182 @@
+/* ===== Main Dropdown ===== */
+.dropdown {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    user-select: none;
+}
+
+/* ===== Dropdown Menu ===== */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f8f9fa;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 12px 0;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Open dropdown */
+.dropdown-menu.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* ===== Category Items ===== */
+.dropdown-category {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    font-weight: 600;
+    color: #000 !important;
+    transition: background 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 16px 20px;
+}
+
+/* Hover Effect */
+.dropdown-category:hover {
+    background: #007bff;
+    color: #ffffff;
+}
+
+/* ===== Arrow Icon Animation ===== */
+.arrow {
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+.dropdown-category.active .arrow {
+    transform: rotate(90deg);
+}
+
+/* ===== Products List (Sub-Menu) ===== */
+.products-list {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    margin: 6%;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Show Products List */
+.dropdown-category.active .products-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* ===== Product Items (Poora Box Clickable) ===== */
+.products-list li {
+    padding: 5px 0;
+    transition: background 0.2s ease;
+    cursor: pointer;
+}
+
+/* Make entire box clickable */
+.products-list li a {
+    text-decoration: none;
+    color: #000 !important;
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    padding: auto;
+}
+
+/* Hover Effect */
+.products-list li:hover {
+    background: #007bff;
+}
+
+.products-list li:hover a {
+    color: #ffffff !important;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .dropdown-menu {
+        width: 150%;
+        box-shadow: none;
+      
+    }
+
+    .products-list {
+        display: none;
+        width: 170%;
+        margin: 0 17px; /* Extra margin hatane ke liye */
+        padding:  0px;
+        
+    }
+
+    .dropdown-category.active .products-list {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dropdown {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .products-list {
+        display: none;
+        width: 120%;
+        margin: 0 17px; /* Extra margin hatane ke liye */
+        padding:  0px;
+        
+    }
+
+    .dropdown-category {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .products-list li a {
+        padding: 10px 0px;
+        font-size: 10px;
+    }
+
+    .dropdown-menu {
+        padding: 10px 0 ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

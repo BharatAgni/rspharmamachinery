@@ -1,0 +1,75 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #1b1b1b; /* Industrial Dark Gray */
+  --primary-color: #ffcc00; /* Metallic Yellow */
+  --secondary-color: #00DDFF; /* Steel Blue */
+  --text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  --box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.4);
+  --gradient: rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+.wrapper {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+}
+
+.btn {
+  width: 140px;
+  height: 40px;
+  border-radius: 5px; /* Rounded nahi, industrial sharp look */
+  border: 2px solid var(--primary-color);
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: var(--black-color);
+  color: var(--primary-color);
+  position: relative;
+  transition: 0.4s;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.btn span {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 2;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: left 0.4s ease;
+  z-index: 1;
+}
+
+.btn:hover::before {
+  left: 0;
+}
+
+.btn:hover {
+  color: var(--black-color);
+  border-color: var(--primary-color);
+}
+
+.btn.disabled {
+  cursor: not-allowed;
+  background: #808080;
+  color: #444;
+  border: 2px solid #666;
+}
+
