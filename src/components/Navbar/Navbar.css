@@ -129,8 +129,8 @@ nav.nav-dark {
     background: #ff5733; /* 🔥 Bright Orange */
     color: var(--white-color);
     padding: 12px 18px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
     display: flex;
     align-items: center;
     gap: 10px;

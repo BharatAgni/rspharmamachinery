@@ -27,6 +27,7 @@ const ProductsDropdown = () => {
     }, []);
 
     const handleProductClick = (path) => {
+        console.log("Navigating to:", path);
         navigate(path);
         setShowDropdown(false);
         setActiveCategory(null);

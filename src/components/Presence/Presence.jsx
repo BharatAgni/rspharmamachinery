@@ -1,10 +1,10 @@
 import React from 'react'
 import './Presence.css'
 import Title from '../Title/Title'
-import neha_img from "../../assets/neha.jpg"
-import bharat_img from "../../assets/bharat.jpg"
-import bhupesh_img from "../../assets/bhupesh.jpg"
-import rahul_img from "../../assets/rahul.jpg"
+import Presence_img_1 from "../../assets/presence-img-1.png"
+import Presence_img_2 from "../../assets/presence-img-2.png"
+import Presence_img_3 from "../../assets/presence-img-3.png"
+import Presence_img_4 from "../../assets/presence-img-4.png"
 const Presence = () => {
   return (
     <div className='Presence-main wrapper'>
@@ -42,27 +42,27 @@ Agro-Chemical"/>
                 </p>
       <div className="Presence">
         <div className='PRODUCTS'>
-            <img src={neha_img} alt='' />
+            <img src={Presence_img_1} alt='' />
             <div>
-                <span className='PRODUCTS-title'>neha</span>
+                <span className='PRODUCTS-title'> Fluidized Bed Dryer </span>
             </div>
         </div>
         <div className='PRODUCTS'>
-            <img src={bharat_img} alt='' />
+            <img src={Presence_img_2} alt='' />
             <div>
-                <span className='PRODUCTS-title'>bharat</span>
+                <span className='PRODUCTS-title'>Rapid Mixer Granulator (RMG)</span>
             </div>
         </div>
         <div className='PRODUCTS'>
-            <img src={bhupesh_img} alt='' />
+            <img src={Presence_img_3} alt='' />
             <div>
-                <span className='PRODUCTS-title'>bhupesh</span>
+                <span className='PRODUCTS-title'>Fluidized Bed Dryer (FBD)</span>
             </div>
         </div>
         <div className='PRODUCTS'>
-            <img src={rahul_img} alt='' />
+            <img src={Presence_img_4} alt='' />
             <div>
-                <span className='PRODUCTS-title'>rahul</span>
+                <span className='PRODUCTS-title'>Vacuum Tray Dryer (VTD)</span>
             </div>
         </div>
       </div>

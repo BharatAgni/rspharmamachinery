@@ -3,7 +3,7 @@ import './Clients.css'
 import Client_img from '../../assets/about-img-1.png'
 import company_img_2 from '../../assets/Pharmaceutical-IMG.png'
 import company_img_3 from '../../assets/Chemicals-IMG.png'
-import comapny_img_4 from '../../assets/Healthcare-IMG.png'
+import comapny_img_4 from '../../assets/COSMATICS-IMG.png'
 
 const Clients = () => {
   return (
@@ -28,7 +28,7 @@ const Clients = () => {
                 <div className='img-ctn'>
                     <img src={comapny_img_4} alt="" />
                 </div>
-                <span>Healthcare</span>
+                <span>COSMATICS</span>
             </div>
         </div>
         

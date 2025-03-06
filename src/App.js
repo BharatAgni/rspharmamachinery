@@ -16,6 +16,7 @@ import Clients from './components/Clients/Clients';
 import Testimonial from './components/Testimonial/Testimonial';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import BlogPage from './components/BlogPage/BlogPage';
 
 // ✅ Product Page Component
 import ProductPage from "./components/pages/ProductPage";
@@ -43,7 +44,8 @@ function App() {
                 <Testimonial />
               </>
             }
-          />
+            />
+          <Route path="/BlogPage" element={<BlogPage/>} /> 
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<AboutUs />} />
 

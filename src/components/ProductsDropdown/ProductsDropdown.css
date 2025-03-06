@@ -142,13 +142,7 @@
         padding: 10px 15px;
         font-size: 14px;
     }
-    .products-list {
-        display: none;
-        width: 120%;
-        margin: 0 17px; /* Extra margin hatane ke liye */
-        padding:  0px;
-        
-    }
+
 
     .dropdown-category {
         padding: 12px 15px;
@@ -156,7 +150,7 @@
     }
 
     .products-list li a {
-        padding: 10px 0px;
+        padding: 0px;
         font-size: 10px;
     }
 

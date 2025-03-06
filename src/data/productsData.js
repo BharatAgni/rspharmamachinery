@@ -251,7 +251,160 @@ const products = {
                 pressure: "Up to 10 bar"
             }
         }
-    }
+    },
+
+    "drying-processing": {
+        "vacuum-tray-dryer": {
+            name: "Vacuum Tray Dryer",
+            // image: vacuum_tray_dryer, // Added image
+            description: "Vacuum Tray Dryer is used for drying heat-sensitive materials under vacuum conditions in pharmaceutical and chemical industries.",
+            features: [
+                "Low-temperature drying for sensitive products",
+                "Uniform drying with shelf heating system",
+                "SS 316 construction for hygiene",
+                "Digital temperature and vacuum controls",
+                "Available in different tray sizes and capacities"
+            ],
+            specifications: {
+                capacity: "6 - 96 trays",
+                temperature: "30 - 80°C",
+                material: "SS 316",
+                vacuumLevel: "600 - 760 mm Hg"
+            }
+        },
+
+        "air-tray-dryer": {
+            name: "Air Tray Dryer",
+            // image: air_tray_dryer, // Added image
+            description: "Air Tray Dryer is used for drying of granules, powders, and food products in pharmaceutical and food industries.",
+            features: [
+                "Uniform drying with hot air circulation",
+                "Adjustable temperature and humidity controls",
+                "SS 304 / SS 316 construction",
+                "Digital timers and temperature displays",
+                "Available in different tray sizes and capacities"
+            ],
+            specifications: {
+                capacity: "6 - 96 trays",
+                temperature: "30 - 100°C",
+                material: "SS 304 / SS 316",
+                airflow: "1000 - 5000 CFM"
+            }
+
+        },
+
+        "auto-coater":{
+            name: "Auto Coater",
+            // image: auto_coater, // Added image
+            description: "Auto Coater is used for coating tablets, pills, and granules with a uniform and controlled coating layer.",
+            features: [
+                "Perforated coating pan for efficient coating",
+                "PLC-based controls for automatic operation",
+                "Stainless steel construction for hygiene",
+                "Inlet air filtration system",
+                "Variable speed control for coating process"
+            ],
+            specifications: {
+                capacity: "10 - 500 kg/batch",
+                material: "SS 304 / SS 316",
+                automation: "PLC based control"
+            }
+        },
+
+        "coating-pan":{
+            name: "Coating Pan",
+            // image: coating_pan, // Added image
+            description: "Coating Pan is used for sugar coating, film coating, and polishing of tablets and pills in pharmaceutical production.",
+            features: [
+                "Perforated and non-perforated pans available",
+                "Stainless steel construction for durability",
+                "Variable speed control for coating process",
+                "Easy loading and unloading of tablets",
+                "Available in different batch capacities"
+            ],
+            specifications: {
+                capacity: "5 - 100 kg/batch",
+                material: "SS 304 / SS 316",
+                coatingType: "Sugar / Film"
+            }
+        },
+
+    },
+
+        "others":{
+            "stand-homogenizer":{
+                name: "Stand Homogenizer",
+                // image: stand_homogenizer, // Added image
+                description: "Stand Homogenizer is used for high-speed mixing, emulsifying, and homogenizing of liquid products in pharmaceutical and food industries.",
+                features: [
+                    "High-speed rotor-stator design for efficient mixing",
+                    "Adjustable speed controls for different applications",
+                    "Stainless steel construction for hygiene",
+                    "Available in different capacities",
+                    "Ideal for pharmaceutical, food, and cosmetic applications"
+                ],
+                specifications: {
+                    capacity: "5 - 5000 L/hr",
+                    power: "1 - 10 kW",
+                    material: "SS 304 / SS 316"
+                }
+            },
+
+            "lifter":{
+                name: "Lifter",
+                // image: lifter, // Added image
+                description: "Lifter is used for safe lifting and handling of materials in pharmaceutical manufacturing and material handling applications.",
+                features: [
+                    "Stainless steel construction for durability",
+                    "Customizable lifting capacity and height",
+                    "Hydraulic or pneumatic lifting options",
+                    "GMP compliant design",
+                    "Easy to clean and maintain"
+                ],
+                specifications: {
+                    capacity: "50 - 5000 kg",
+                    material: "SS 304 / SS 316",
+                    liftingHeight: "Customized"
+                }
+            },
+
+            "platform-staircase":{
+                name: "Platform & Staircase",
+                // image: platform_staircase, // Added image
+                description: "Platform & Staircase are used for safe access to elevated areas and equipment in pharmaceutical and industrial facilities.",
+                features: [
+                    "Stainless steel construction for hygiene",
+                    "Customized platform sizes and heights",
+                    "Anti-slip steps and handrails for safety",
+                    "Easy installation and relocation",
+                    "Complies with safety standards"
+                ],
+                specifications: {
+                    material: "SS 304 / SS 316",
+                    platformSize: "Customized",
+                    height: "Customized"
+                }
+            },
+
+            "inline-homogenizer":{
+                name: "Inline Homogenizer",
+                // image: inline_homogenizer, // Added image
+                description: "Inline Homogenizer is used for continuous mixing, emulsifying, and homogenizing of liquid products in pharmaceutical and food industries.",
+                features: [
+                    "High-speed rotor-stator design for efficient mixing",
+                    "Inline installation for continuous processing",
+                    "Stainless steel construction for hygiene",
+                    "Adjustable speed controls for different applications",
+                    "Ideal for high-viscosity products"
+                ],
+                specifications: {
+                    capacity: "100 - 5000 L/hr",
+                    power: "1 - 15 kW",
+                    material: "SS 304 / SS 316"
+                }
+            }
+        }
+
 };
 
 export default products;

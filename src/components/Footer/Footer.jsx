@@ -7,7 +7,7 @@ import emailIcon from "../../assets/mail-icon.png";
 import whatsappIcon from "../../assets/whatsapp-icon.png";
 import locationIcon from "../../assets/location-icon.png";
 import facebookIcon from "../../assets/facebook-icon.png";
-import twitterIcon from "../../assets/twitter-icon.png";
+import Linkedinicon from "../../assets/linkedin-icon.png";
 import instagramIcon from "../../assets/instagram-icon.png";
 
 const Footer = () => {
@@ -47,9 +47,7 @@ const Footer = () => {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/clients">Client List</a></li>
-            <li><a href="/news">News & Events</a></li>
+            <li><a href="/BlogPage">Blog</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
@@ -59,8 +57,8 @@ const Footer = () => {
       <div className="social">
         <p>Follow us</p>
         <div className="social-icons">
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <img src={twitterIcon} alt="Twitter" />
+          <a href="https://Linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src={Linkedinicon} alt="Linkedin" />
           </a>
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <img src={facebookIcon} alt="Facebook" />

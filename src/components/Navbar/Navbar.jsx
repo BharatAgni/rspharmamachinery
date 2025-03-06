@@ -11,6 +11,10 @@ const Navbar = () => {
     const [popupClosed, setPopupClosed] = useState(false);
     const location = useLocation();
 
+    useEffect(() => {
+            setNavState(false);
+    }, [location.pathname]);
+
     const handleNavState = () => setNavState(!navState);
 
     useEffect(() => {
@@ -70,7 +74,7 @@ const Navbar = () => {
                         <Link to="/contact">Contact</Link>
                     </li>
                     <li>
-                        <Link to="/blog">Blog</Link>
+                        <Link to="/BlogPage">Blog</Link>
                     </li>
                 </ul>
 
@@ -84,7 +88,7 @@ const Navbar = () => {
             {showPopup && (
                 <div className="blog-popup show">
                     <p>🔥 Don't miss our latest blog updates!</p>
-                    <Link to="/blog" className="popup-btn">
+                    <Link to="/BlogPage" className="popup-btn">
                         Read Now
                     </Link>
                     <span className="popup-close" onClick={handlePopupClose}>

@@ -2,10 +2,10 @@ import React from 'react';
 import './About.css';
 import Title from '../Title/Title';
 import About_main_img from '../../assets/about-img-main.png';
-import About_img_1 from '../../assets/ointment-manufacturing.png';
-import About_img_2 from '../../assets/fluid-bed-dryer.png';
-import About_img_3 from '../../assets/about-img-3.png';
-import About_img_4 from '../../assets/about-img-4.jpg';
+import About_img_1 from '../../assets/Photos-img-1.png';
+import About_img_2 from '../../assets/Photos-img-2.png';
+import About_img_3 from '../../assets/Photos-img-3.png';
+import About_img_4 from '../../assets/Photos-img-4.png';
 import Knowledge_icon from '../../assets/knowledge.png';
 import play_icon from '../../assets/play-icon.png';
 
