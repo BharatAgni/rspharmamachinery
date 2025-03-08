@@ -25,7 +25,7 @@ const Presence = () => {
   
         <p style={{ color: "black", marginBottom: "20px", lineHeight: "1.5", padding: "20px", textAlign: "left" }}>
         <strong>RS PHARMA MACHINERY</strong> Group of Companies is a leading manufacturer and designer of machineries,  
-    manufacturing plant in the state of <strong>Gujarat – INDIA</strong>.  
+    manufacturing plant in the state of <strong>Maharashtra – INDIA</strong>.  
     RS PHARMA MACHINERY is offering <strong>World-Class Equipment</strong> with <strong>German technology</strong> for  
     <strong> Bulk Drugs</strong>, <strong>Cosmetics & Food</strong>, Pharmaceuticals, Chemicals Industries.  
     Machinery is an added advantage of automatic processing & packaging machineries for  
