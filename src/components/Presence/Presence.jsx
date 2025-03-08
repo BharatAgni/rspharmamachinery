@@ -16,7 +16,7 @@ Textile
 Dairy
 Engineering
 Agro-Chemical"/>
-        <p style={{ color: "black", marginBottom: "20px", lineHeight: "1.5" }}>
+        <p style={{ color: "black", marginBottom: "20px", lineHeight: "1.5", padding: "20px" }}>
         <strong>RS PHARMA MACHINERY</strong> Group of Companies is a leading manufacturer and designer of machineries,  
     manufacturing plant in the state of <strong>Gujarat – INDIA</strong>.  
     RS PHARMA MACHINERY is offering <strong>World-Class Equipment</strong> with <strong>German technology</strong> for  
@@ -29,13 +29,13 @@ Agro-Chemical"/>
                 </p>
 
 
-                <p style={{ color: "black", marginBottom: "20px", lineHeight: "1.5", alignItems: "center" }}>
+                <p style={{ color: "black", marginBottom: "20px", lineHeight: "1.5", padding: "20px" }}>
                 We design and manufacture high quality machines for pharmaceutical, nutraceutical and cosmetic industries worldwide. 
                 Also We offered  API,Cosmetics, Beverages, Pharmaceutical ,Bulk Drug, Beverages, Chemicals, Edible Oil, Lubricants,
                  Dairy, Detergents, Pesticides ,Distilleries, Fertilizers, Food, Nutraceuticals, Paints, Lubricants , Pigments, Plastics 
                  including Liquid, Powder, Paste based manufacturing industries machineries and Equipments / Plant and Turnkey Solution 
                 </p>
-                <p>
+                <p style={{ padding: "20px"}}> 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus eaque commodi in. 
                     Architecto animi ratione, consectetur illum sapiente rem incidunt. Alias exercitationem culpa 
                     voluptates, aut similique voluptatum labore quasi.
