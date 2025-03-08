@@ -109,6 +109,15 @@
   }
   
   @media (max-width: 480px) {
+
+    .hero-image {
+      transform: rotate(90deg);
+      transform-origin: center;
+      width: 100vh; /* Full height as width after rotation */
+      height: 100vw; /* Full width as height after rotation */
+      object-fit: cover;
+    }
+    
     .hero-title {
       font-size: 35px;
     }
