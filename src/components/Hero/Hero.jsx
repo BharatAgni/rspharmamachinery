@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import about_img_1 from "../../assets/about-img-3.png";
-import about_img_2 from "../../assets/liquid-oral-processing.png";
+// import about_img_2 from "../../assets/liquid-oral-processing.png"; chmage karna hai
 import about_img_3 from "../../assets/about-img-1.png";
 import about_img_4 from "../../assets/Manufacturing-Vessels.png"
 
 const Hero = () => {
-  const images = [about_img_1, about_img_2, about_img_3,about_img_4 ];
+  const images = [about_img_1, about_img_3,about_img_4 ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
