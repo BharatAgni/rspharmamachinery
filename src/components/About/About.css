@@ -135,8 +135,15 @@
     background-color: var(--primary-color);
 }
 
+/* Icon Image Rotation Effect */
 .about-bottom .icon img {
     width: 50px;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Rotate 360° on Hover */
+.about-bottom .item:hover .icon img {
+    transform: rotate(360deg);
 }
 
 .about-bottom h3 {
@@ -147,8 +154,15 @@
 }
 
 .about-bottom p {
+    text-align: center;
     font-size: 16px;
     font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-bottom p:hover {
+    color: #222831;
+    transform: scale(1.1);
 }
 
 /* Responsive Design */
