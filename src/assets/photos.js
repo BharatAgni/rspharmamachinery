@@ -13,6 +13,7 @@ import pic12 from '../assets/Gallery-Photos-12.jpg'
 import pic13 from '../assets/Gallery-Photos-13.jpg'
 import pic14 from '../assets/Gallery-Photos-14.jpg'
 import pic15 from '../assets/Gallery-Photos-15.jpg'
+import pic16 from '../assets/tray dryer.png'
 
 
 const Photos = [
@@ -75,6 +76,10 @@ const Photos = [
     {
         id: 15,
         photo: pic15,
+    },
+    {
+        id: 16,
+        photo: pic16,
     },
     
 ]

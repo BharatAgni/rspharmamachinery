@@ -57,7 +57,7 @@ const Navbar = () => {
             <nav className={sticky ? "nav-dark" : ""}>
                 <div className="nav-brand">
                     <img src={logo} alt="RS PHARMA MACHINERY Logo" className="logo" />
-                    <span className="brand-text">RS PHARMA MACHINERY</span>
+                    {/* <span className="brand-text">RS PHARMA MACHINERY</span> */}
                 </div>
 
                 <ul className={`nav-link ${navState ? "open" : ""}`}>

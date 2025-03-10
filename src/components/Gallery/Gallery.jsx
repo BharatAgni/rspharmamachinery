@@ -2,8 +2,8 @@ import React from 'react'
 import './Gallery.css'
 import Title from '../Title/Title'
 import gallery_1 from '../../assets/Gallery-IMG-1.png'
-import gallery_2 from '../../assets/Gallery-IMG-2.png'
-import gallery_3 from '../../assets/Gallery-IMG-3.png'
+import gallery_2 from '../../assets/FLUIID BED PROCESSOR 1.png'
+import gallery_3 from '../../assets/colidal mill 1.png'
 import gallery_4 from '../../assets/Gallery-IMG-4.png'
 
 const Gallery = ({setHideGallery}) => {

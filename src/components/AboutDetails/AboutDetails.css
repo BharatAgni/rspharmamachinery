@@ -9,6 +9,7 @@
     height: 400px;
     border-radius: 15px;
     overflow: hidden;
+    
 }
 
 .about-details .main-img img{
@@ -62,7 +63,11 @@
     }
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px)
+    {
+        .about-details .main-img{
+            height: 300px;
+        }
     .about-details-container{
         width: 100%;
         left: 0%;
@@ -73,7 +78,7 @@
 
 @media(max-width: 600px){
     .about-details .main-img{
-        height: 300px;
+        height: 200px;
     }
 
     .about-details-container{
@@ -92,8 +97,9 @@
 
 @media(max-width: 425px){
     .about-details .main-img{
-        height: 250px;
+        height: 180px;
         
        
     }
+    
 }

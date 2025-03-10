@@ -1,9 +1,9 @@
 import React from 'react'
 import './Presence.css'
 import Title from '../Title/Title'
-import Presence_img_1 from "../../assets/presence-img-1.png"
+import Presence_img_1 from "../../assets/FLUIID BED PROCESSOR 1.png"
 import Presence_img_2 from "../../assets/presence-img-2.png"
-import Presence_img_3 from "../../assets/presence-img-3.png"
+import Presence_img_3 from "../../assets/COATING PAN.jpg"
 import Presence_img_4 from "../../assets/presence-img-4.png"
 const Presence = () => {
   return (
@@ -63,7 +63,7 @@ const Presence = () => {
         <div className='PRODUCTS'>
             <img src={Presence_img_3} alt='' />
             <div>
-                <span className='PRODUCTS-title'>Fluidized Bed Dryer (FBD)</span>
+                <span className='PRODUCTS-title'>COATING PAN</span>
             </div>
         </div>
         <div className='PRODUCTS'>

@@ -3,18 +3,25 @@
 .product-page {
     background: linear-gradient(135deg, #1e3c72, #2a5298, #88aaa7); 
     min-height: 100vh;
-    padding: 20px 0;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-container {
-    max-width: 900px;
-    margin: 50px auto;
-    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
     padding: 30px;
-    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
-    text-align: center;
+    text-align: left; /* Saara content left align ho jayega */
     transition: all 0.3s ease-in-out;
 }
 
@@ -22,89 +29,110 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
 }
 
-.product-container h1 {
-    font-size: 32px;
-    color: #222;
+.product-title {
+    font-size: 19px !important;
     font-weight: bold;
-    margin-bottom: 18px;
-    padding: 12px;
-    background: linear-gradient(90deg, #ff5733, #ff8c42);
-    color: white;
-    border-radius: 8px;
-    display: inline-block;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    margin-top: 15px;
+    text-align: center;
+    background-color: #8dc6ff;
+    padding: 5px 10px;
+    border-radius: 4px;
+
 }
 
-/* Product Image */
+/* ================= Product Image ================= */
 .product-image {
-    width: 100%;
-    max-width: 450px;
+    width: 150%; /* Image ko chhota kar diya */
+    max-width: 450px; /* Maximum width aur kam ki */
     border-radius: 12px;
-    margin: 25px 0;
+    margin: 10px 0 10px 0; /* Top aur bottom margin rakha, left margin hataya */
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .product-image:hover {
-    transform: scale(1.08);
-}
-
-.product-container p {
-    font-size: 18px;
-    color: #000000;
-    margin-bottom: 22px;
-    text-align: center;
+    transform: scale(1.05);
 }
 
 .product-container h3 {
     font-size: 22px;
     margin-bottom: 12px;
-    color: #000000;
+    color: #000;
+    text-align: left;
 }
 
 .product-container ul {
-    list-style-type: disc; /* ✅ Bullet points added */
-    padding-left: 20px; /* ✅ Left align properly */
-    text-align: left; /* ✅ Ensures left alignment */
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    
+    
 }
 
 .product-container ul li {
     font-size: 17px;
-    color: #444;
-    padding: 8px 0;
-    border-bottom: none; /* ✅ Removed underline */
+    color: black;
+    padding:  2px 0;
+    
+}
+.features-section{
+    background: #bbe4e9;
 }
 
-/* ================= Specifications Styling ================= */
-.specifications {
-    margin-top: 22px;
-    padding: 18px;
-    background: #f1f1f1;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
+/* ================= Services Section Styling ================= */
+/* ================= Services Section Styling ================= */
+.services-section {
+    margin-top: 8px; /* Upar ka gap aur kam kiya */
+    padding: 8px 12px; /* Andar ka padding chhota kiya */
+    background: #bbe4e9;
+    border-radius: 5px; /* Thoda aur smooth edges */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Shadow halka kiya */
+    max-width: 450px; /* Width aur chhoti ki */
+    font-size: 13px; /* Text aur compact banaya */
 }
 
-.specifications h3 {
-    font-size: 22px;
-    color: #000000;
-    margin-bottom: 12px;
+.services-section h3 {
+    font-size: 15px; /* Heading ko thoda adjust kiya */
+    margin-bottom: 6px;
 }
 
-.specifications ul {
-    padding: 0;
-    list-style-type: none;
+.services-section ul {
+    padding-left: 16px;
+    margin: 0;
 }
 
-.specifications ul li {
-    font-size: 17px;
-    color: #000000;
-    padding: 8px 0;
-    border-bottom: 1px solid #ccc;
+.services-section li {
+    margin-bottom: 4px; /* List items ke beech gap aur kam kiya */
 }
 
-.specifications ul li:last-child {
-    border-bottom: none;
+
+
+/* ================= Specifications Section Styling ================= */
+.specifications-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f0f8ff; /* Halki blue background di */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* ================= Other Machinery Section Styling ================= */
+.other-machinery {
+    margin-top: 10px;
+    /* padding: 12px; */
+    font-size: 12px;
+    
+    background: #eaf6ff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* ================= Product Not Found Styling ================= */
@@ -157,35 +185,46 @@
 }
 
 .modal-content img {
-    max-width: 90%;
-    max-height: 90vh;
+    max-width: 100%;
+    max-height: 100vh;
     border-radius: 12px;
     box-shadow: 0 5px 12px rgba(255, 255, 255, 0.2);
     animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Animation */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
 }
 
 /* ================= Responsive Design for Mobile ================= */
+
+@media (min-width: 1024px) {
+    
+    .services-section {
+        margin-top: -80px;
+    }
+    
+}
+
 @media (max-width: 768px) {
     .product-container {
-        max-width: 95%;
-        padding: 18px;
-        margin-top: 25%;
-    
+        padding: 20px;
     }
     
-    .product-container h1 {
-        font-size: 26px;
-        padding: 10px;
-    }
-    
-    .product-container p {
-        font-size: 16px;
+    .product-title {
+        font-size: 24px;
     }
     
     .product-image {
@@ -201,5 +240,9 @@
         max-height: 85vh;
     }
 }
+.features-section{
+    margin: 3px;
+}
+
 
 

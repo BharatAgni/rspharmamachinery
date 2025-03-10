@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import Title from '../Title/Title';
-import About_main_img from '../../assets/about-img-main.png';
+import About_main_img from '../../assets/raipid mixture Granulator(High shear mixture).png';
 import About_img_1 from '../../assets/Photos-img-1.png';
 import About_img_2 from '../../assets/Photos-img-2.png';
 import About_img_3 from '../../assets/Photos-img-3.png';

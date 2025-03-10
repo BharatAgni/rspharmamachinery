@@ -26,8 +26,8 @@
 
 .about-top .play-icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 40%;
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
@@ -55,19 +55,6 @@
     animation: animateplay 2s infinite;
 }
 
-/* .about-top .play-icon .arrow {
-    font-size: 22px;
-    color: white;
-    transition: transform 0.3s ease-in-out;
-} */
-
-/* .about-top .play-icon:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.about-top .play-icon:hover .arrow {
-    transform: translateX(-8px);
-} */
 
 @keyframes animateplay {
     0% {
@@ -197,12 +184,40 @@
         flex-basis: 48.5%;
         margin-bottom: 15px;
     }
+    .about-top .play-icon {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        /* background: rgba(0, 0, 0, 0.6); */
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+    }
 }
 
 @media (max-width: 700px) {
     .about-top {
         flex-wrap: wrap;
     }
+
+    .about-top .play-icon {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        /* background: rgba(0, 0, 0, 0.6); */
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+    }
+
 
     .about-top .item-left,
     .about-top .item-right {
@@ -228,6 +243,26 @@
 @media (max-width: 525px) {
     .about-top .item-left {
         height: 350px;
+    }
+    .about-top .play-icon img {
+        width: 40px;
+        border-radius: inherit;
+        background-color: var(--secondary-color);
+    }
+
+    
+    .about-top .play-icon {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        /* background: rgba(0, 0, 0, 0.6); */
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
     }
 }
 

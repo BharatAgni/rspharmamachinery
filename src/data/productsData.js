@@ -33,27 +33,41 @@ const products = {
             ],
             specifications: {
                 capacity: "50 - 1000 kg/batch",
-                power: "5 - 20 kW",
+                power: "5 - 50 kW",
                 material: "SS 304 / SS 316 / SS 316L",
                 automation: "Semi & Fully Automatic",
+            },
+            services: {
+                description: "We have team of qualified engineers for after sales service of supplied equipment. Our services includes installation, commissioning, validation, Service AMC etc.",
+                commissioning: "Ensuring equipment is tested and fully operational.",
+                validation: "GMP & FDA-compliant validation services.",
+                maintenance: "Annual maintenance contracts (AMC) available.",
+                support: "24/7 customer support for troubleshooting and assistance."
             }
+           
         },
         "liquid-oral-processing-plant": {
             name: "Liquid Oral Processing Plant",
             image: liquid_oral_processing,
             description: "The Liquid Oral Processing Plant is used for the production of syrups, suspensions, and oral liquids with efficient mixing, heating, and homogenizing.",
             features: [
-                "Modular design with integrated process controls",
-                "SS 316 tanks with heating and cooling jackets",
-                "Efficient homogenization and mixing",
-                "Sanitary piping with CIP & SIP system",
-                "Complies with FDA, cGMP, and WHO standards"
+                "High-grade stainless steel construction (SS 316/SS 304/SS 316L)",
+                "Efficient homogenizing and emulsifying system with inbuilt or inline homogenizer",
+                "Vacuum processing to avoid air entrapment",
+                "CIP (Clean-in-Place) system for easy cleaning",
+                "Available in different capacities to suit production needs",
+                "Vessel design as per ASME guidelines",
+                "Seamless pipe fittings with electro-polished tri-clover joints",
+                "Semi contra rotary anchor type agitator with open slot scraper design",
+                "Pre-Mix vessels with top/bottom stirrer",
+                "Safety interlocks for enhanced protection",
+                "Fully automatic operation with centralized operating panel"
             ],
             specifications: {
-                capacity: "100 - 5000 L",
-                power: "10 - 50 kW",
-                material: "SS 316",
-                automation: "PLC based control"
+                capacity: "50 - 1000 kg/batch",
+                power: "5 - 20 kW",
+                material: "SS 304 / SS 316 / SS 316L",
+                automation: "Semi & Fully Automatic",
             }
         },
         "manufacturing-vessels": {
@@ -61,11 +75,17 @@ const products = {
             image: Manufacturing_Vessels,
             description: "Manufacturing Vessels are used for storage and preparation of pharmaceutical and food-grade liquids and semi-solids.",
             features: [
-                "Constructed with SS 316/SS 304 for hygiene",
-                "Jacketed vessels for temperature control",
-                "Agitators and stirrers for proper mixing",
-                "Pressure and vacuum compatibility",
-                "Customizable sizes and capacities"
+                "High-grade stainless steel construction (SS 316/SS 304/SS 316L)",
+                "Efficient homogenizing and emulsifying system with inbuilt or inline homogenizer",
+                "Vacuum processing to avoid air entrapment",
+                "CIP (Clean-in-Place) system for easy cleaning",
+                "Available in different capacities to suit production needs",
+                "Vessel design as per ASME guidelines",
+                "Seamless pipe fittings with electro-polished tri-clover joints",
+                "Semi contra rotary anchor type agitator with open slot scraper design",
+                "Pre-Mix vessels with top/bottom stirrer",
+                "Safety interlocks for enhanced protection",
+                "Fully automatic operation with centralized operating panel"
             ],
             specifications: {
                 capacity: "100 - 10,000 L",
@@ -78,11 +98,19 @@ const products = {
             image: storage_tanks,
             description: "Storage Tanks are designed for safe storage of raw materials, finished products, and intermediates in pharmaceutical and food industries.",
             features: [
+                 "Efficient homogenizing and emulsifying system with inbuilt or inline homogenizer",
                 "Available in vertical and horizontal configurations",
                 "SS 316/SS 304 construction for durability",
                 "Leak-proof design with sanitary fittings",
                 "Pressure and vacuum-resistant options",
-                "Custom sizes available"
+                "Custom sizes available",
+                "ddfjbjdsfbdfb",
+                "wdbhsjhbd",
+                "ujebhdshjbfs",
+                "jdbwnsjb",
+                "efjbhjefbhef",
+
+
             ],
             specifications: {
                 capacity: "500 - 50,000 L",

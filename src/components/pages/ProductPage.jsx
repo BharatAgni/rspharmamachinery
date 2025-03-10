@@ -26,37 +26,60 @@ const ProductPage = () => {
     };
 
     return (
-        <div className="product-page">  {/* ✅ Background Change Ke Liye Class Add Ki */}
+        <div className="product-page">
             <div className="product-container">
-                <h1>{product.name}</h1>
-                <img 
-                    src={product.image} 
-                    alt={product.name} 
-                    className="product-image" 
-                    onClick={() => setModalOpen(true)} // Open modal on click
-                />
-                <p>{product.description}</p>
-                
-                <h3>Features:</h3>
+    
+                {/* ✅ Image & Title Container (Left Side) */}
+                <div className="image-title-container">
+                    <img 
+                        src={product.image} 
+                        alt={product.name} 
+                        className="product-image" 
+                        onClick={() => setModalOpen(true)} 
+                    />
+                    <h2 className="product-title">{product.name}</h2>
+                </div>
+    
+                {/* ✅ Key Features */}
+                <div className="features-section">
+                    <h3>Key Features:</h3>
+                    <ul>
+                        {product.features.map((feature, index) => (
+                            <li key={index}> {feature}</li>
+                        ))}
+                    </ul>
+                </div>
+    
+               {/* ✅ Services */}
+            <div className="services-section">
+                <h3>🛠️ Services We Offer:</h3>
                 <ul>
-                    {product.features.map((feature, index) => (
-                        <li key={index}>{feature}</li>
-                    ))}
-                </ul>
-
-                {/* ✅ Specifications Section Added */}
-                {product.specifications && (
-                    <div className="specifications">
-                        <h3>Specifications:</h3>
-                        <ul>
-                            {Object.entries(product.specifications).map(([key, value]) => (
-                                <li key={key}><strong>{key}:</strong> {value}</li>
-                            ))}
+                    {product.services &&
+                        Object.entries(product.services).map(([key, value]) => (
+                            <li key={key}><strong>{key}:</strong> {value}</li>
+                      ))
+                         }
                         </ul>
                     </div>
-                )}
 
-                {/* ✅ Modal for Fullscreen Image with Close Button */}
+    
+                {/* ✅ Other Machinery */}
+                <div className="other-machinery">
+                    <h3>🔗Machine Equiped With:</h3>
+                    <p>{product.alliedMachinery}</p>
+                </div>
+    
+                {/* ✅ Specifications */}
+                <div className="specifications-section">
+                    <h3>Technical Specifications:</h3>
+                    <ul>
+                        {Object.entries(product.specifications).map(([key, value]) => (
+                            <li key={key}><strong>{key}:</strong> {value}</li>
+                        ))}
+                    </ul>
+                </div>
+    
+                {/* Image Modal */}
                 {isModalOpen && (
                     <div className="modal-overlay" onClick={closeModal}>
                         <div className="modal-content">
@@ -67,7 +90,7 @@ const ProductPage = () => {
                 )}
             </div>
         </div>
-    );
+    )
 };
 
 export default ProductPage;
