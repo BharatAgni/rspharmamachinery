@@ -80,16 +80,21 @@
     padding:  2px 0;
     
 }
+/*======================features section=================*/
 .features-section{
-    background: #bbe4e9;
+    width: 700px; /* Set width */
+    height: 300px; /* Fixed height */
+   
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Scroll enable karega agar content zyada ho */
 }
 
 /* ================= Services Section Styling ================= */
-/* ================= Services Section Styling ================= */
 .services-section {
-    margin-top: 8px; /* Upar ka gap aur kam kiya */
+    margin-top: 12px; /* Upar ka gap aur kam kiya */
     padding: 8px 12px; /* Andar ka padding chhota kiya */
-    background: #bbe4e9;
     border-radius: 5px; /* Thoda aur smooth edges */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Shadow halka kiya */
     max-width: 450px; /* Width aur chhoti ki */
@@ -115,14 +120,15 @@
 /* ================= Specifications Section Styling ================= */
 .specifications-section {
     margin-top: 20px;
-    padding: 15px;
-    background: #f0f8ff; /* Halki blue background di */
+    padding: 10px 12px;
+    
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     font-size: 16px;
     color: #333;
     line-height: 1.5;
 }
+
 
 /* ================= Other Machinery Section Styling ================= */
 .other-machinery {
@@ -213,7 +219,7 @@
 @media (min-width: 1024px) {
     
     .services-section {
-        margin-top: -80px;
+        margin-top: 0px;
     }
     
 }

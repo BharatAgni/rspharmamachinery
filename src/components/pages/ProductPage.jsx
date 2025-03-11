@@ -61,22 +61,33 @@ const ProductPage = () => {
                          }
                         </ul>
                     </div>
-
-    
-                {/* ✅ Other Machinery */}
-                <div className="other-machinery">
-                    <h3>🔗Machine Equiped With:</h3>
-                    <p>{product.alliedMachinery}</p>
-                </div>
     
                 {/* ✅ Specifications */}
                 <div className="specifications-section">
                     <h3>Technical Specifications:</h3>
                     <ul>
                         {Object.entries(product.specifications).map(([key, value]) => (
-                            <li key={key}><strong>{key}:</strong> {value}</li>
+                            <li key={key}>
+                                <strong>{key}:</strong>
+                                {typeof value === "object" ? (
+                                    <ul>
+                                        {Object.entries(value).map(([subKey, subValue]) => (
+                                            <li key={subKey}><strong>{subKey}:</strong> {subValue}</li>
+                                        ))}
+                                    </ul>
+                                ) : (
+                                    ` ${value}`
+                                )}
+                            </li>
                         ))}
                     </ul>
+                </div>
+
+                
+                 {/* ✅ Other Machinery */}
+                <div className="other-machinery">
+                    <h3>🔗Machine Equped With:</h3>
+                    <p>{product.alliedMachinery}</p>
                 </div>
     
                 {/* Image Modal */}

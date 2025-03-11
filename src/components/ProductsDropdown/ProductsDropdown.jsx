@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./ProductsDropdown.css";
 
 const ProductsDropdown = () => {
@@ -10,7 +10,6 @@ const ProductsDropdown = () => {
 
     useEffect(() => {
         const checkMobile = () => setIsMobile(window.innerWidth <= 768);
-        checkMobile();
         window.addEventListener("resize", checkMobile);
         return () => window.removeEventListener("resize", checkMobile);
     }, []);
@@ -18,8 +17,10 @@ const ProductsDropdown = () => {
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (!event.target.closest(".dropdown")) {
-                setShowDropdown(false);
-                setActiveCategory(null);
+                setTimeout(() => {
+                    setShowDropdown(false);
+                    setActiveCategory(null);
+                }, 200); // Delay added
             }
         };
         document.addEventListener("click", handleClickOutside);
@@ -29,8 +30,12 @@ const ProductsDropdown = () => {
     const handleProductClick = (path) => {
         console.log("Navigating to:", path);
         navigate(path);
-        setShowDropdown(false);
-        setActiveCategory(null);
+
+        // ✅ Fix: Dropdown turant close hone ke issue ko fix kiya
+        setTimeout(() => {
+            setShowDropdown(false);
+            setActiveCategory(null);
+        }, 200); // Delay added to allow click event
     };
 
     const categories = [
@@ -40,7 +45,7 @@ const ProductsDropdown = () => {
                 { name: "Ointment Manufacturing Plant", path: "/products/ointment-liquid/ointment-manufacturing-plant" },
                 { name: "Liquid Oral Processing Plant", path: "/products/ointment-liquid/liquid-oral-processing-plant" },
                 { name: "Manufacturing Vessels", path: "/products/ointment-liquid/manufacturing-vessels" },
-                { name: "Storage Tanks", path: "/products/ointment-liquid/storage-tanks" },
+                // { name: "Storage Tanks", path: "/products/ointment-liquid/storage-tanks" },
                 { name: "Sparkler Filter Press", path: "/products/ointment-liquid/sparkler-filter-press" }
             ]
         },
@@ -94,7 +99,9 @@ const ProductsDropdown = () => {
                         onClick={(e) => {
                             if (isMobile) {
                                 e.stopPropagation();
-                                setActiveCategory(prev => prev === category.name ? null : category.name);
+                                setTimeout(() => {
+                                    setActiveCategory(prev => (prev === category.name ? null : category.name));
+                                }, 200); // ✅ Fix added
                             }
                         }}
                     >
@@ -102,13 +109,12 @@ const ProductsDropdown = () => {
                         <span className={`arrow ${activeCategory === category.name ? "rotate" : ""}`}>▶</span>
                         <ul className={`products-list ${activeCategory === category.name ? "visible" : ""}`}>
                             {category.products.map((product, idx) => (
-                                <li key={idx} className="clickable-item" onClick={() => handleProductClick(product.path)}>
-                                    <Link
-                                        to={product.path}
-                                        onClick={(e) => e.preventDefault()}
-                                    >
-                                        {product.name}
-                                    </Link>
+                                <li key={idx} className="clickable-item"
+                                    onClick={(e) => {
+                                        e.stopPropagation(); // ✅ Fix added
+                                        handleProductClick(product.path);
+                                    }}>
+                                    {product.name}
                                 </li>
                             ))}
                         </ul>
@@ -120,8 +126,6 @@ const ProductsDropdown = () => {
 };
 
 export default ProductsDropdown;
-
-
 
 
 
