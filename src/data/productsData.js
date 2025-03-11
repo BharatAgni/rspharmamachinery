@@ -1,8 +1,11 @@
-import ointment_manufacturing from "../assets/ointment-manufacturing.png";
+import ointment_manufacturing from "../assets/ointment-plant.jpg";
 import liquid_oral_processing from "../assets/liquid-oral-processing.png";
-import Manufacturing_Vessels from "../assets/Manufacturing-Vessels.png";
-import storage_tanks from "../assets/storage-tanks.png";
+// import Manufacturing_Vessels from "../assets/Manufacturing-Vessels.png";
+// import storage_tanks from "../assets/storage-tanks.png";
 import sparkler_filter_press from "../assets/sparkler-filter-press.png";
+import colloidal_mill from "../assets/colidal mill 1.png"
+import coating_pan from "../assets/COATING PAN.jpg"
+import multimill from "../assets/miltimill.jpg"
 // import fluid_bed_processor from "../assets/fluid-bed-processor.png"; // Add missing image imports
 // import rapid_mixture_granulator from "../assets/rapid-mixture-granulator.png";
 // import vibro_shifter from "../assets/vibro-shifter.png";
@@ -97,7 +100,7 @@ const products = {
         },
         "manufacturing-vessels": {
             name: "Manufacturing Vessels",
-            image: Manufacturing_Vessels,
+            // image: Manufacturing_Vessels,
             description: "Manufacturing Vessels are used for storage and preparation of pharmaceutical and food-grade liquids and semi-solids.",
             features: [
                 <strong>Types of Manufacturing Vessels:</strong> ,
@@ -340,7 +343,7 @@ const products = {
         },
         "multimill": {
             name: "Multimill",
-            // image: multimill, // Added image
+            image: multimill, // Added image
             description: "Multimill is used for granulation, pulverization, and size reduction in pharmaceutical and chemical industries.",
             features: [
                 "High-speed and uniform granulation",
@@ -398,7 +401,7 @@ const products = {
         
         "colloidal-mill": {
             name: "Colloidal Mill",
-            // image: colloidal_mill, // Added image
+            image: colloidal_mill, // Added image
             description: "Colloidal Mill is used for homogenizing, emulsifying, and fine grinding of liquid and semi-solid products.",
             features: [
                 "High shear mixing for fine particle reduction",
@@ -544,7 +547,7 @@ const products = {
 
         "coating-pan":{
             name: "Coating Pan",
-            // image: coating_pan, // Added image
+            image: coating_pan, // Added image
             description: "Coating Pan is used for sugar coating, film coating, and polishing of tablets and pills in pharmaceutical production.",
             features: [
                 "Perforated and non-perforated pans available",

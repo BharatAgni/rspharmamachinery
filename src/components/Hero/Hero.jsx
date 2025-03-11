@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import about_img_1 from "../../assets/about-img-3.png";
+import ointment_plant from "../../assets/ointment-plant.jpg"; // Rename this image file
 import about_img_3 from "../../assets/about-img-1.png";
-import about_img_4 from "../../assets/Manufacturing-Vessels.png";
+
+
 
 const Hero = () => {
-  const images = [about_img_1, about_img_3, about_img_4];
+  const images = [about_img_1, ointment_plant, about_img_3,];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
