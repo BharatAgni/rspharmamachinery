@@ -5,7 +5,7 @@ import liquid_oral_processing from "../assets/liquid-oral-processing.png";
 import sparkler_filter_press from "../assets/sparkler-filter-press.png";
 import colloidal_mill from "../assets/colidal mill 1.png"
 import coating_pan from "../assets/COATING PAN.jpg"
-import multimill from "../assets/miltimill.jpg"
+import multimill from "../assets/miltimill.png"
 // import fluid_bed_processor from "../assets/fluid-bed-processor.png"; // Add missing image imports
 // import rapid_mixture_granulator from "../assets/rapid-mixture-granulator.png";
 // import vibro_shifter from "../assets/vibro-shifter.png";

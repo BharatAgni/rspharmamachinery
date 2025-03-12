@@ -1,5 +1,4 @@
 /* ================= Product Page Styling ================= */
-
 .product-page {
     background: linear-gradient(135deg, #1e3c72, #2a5298, #88aaa7); 
     min-height: 100vh;
@@ -10,18 +9,16 @@
 }
 
 .product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
     width: 100%;
-    max-width: 100%;
-    padding: 30px;
+    max-width: 1300px;
+    padding: 20px;
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
-    text-align: left; /* Saara content left align ho jayega */
+    text-align: left;
     transition: all 0.3s ease-in-out;
 }
 
@@ -29,163 +26,27 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
 }
 
-.product-title {
-    font-size: 19px !important;
-    font-weight: bold;
-    margin-top: 15px;
-    text-align: center;
-    background-color: #8dc6ff;
-    padding: 5px 10px;
-    border-radius: 4px;
-
-}
-
 /* ================= Product Image ================= */
 .product-image {
-    width: 150%; /* Image ko chhota kar diya */
-    max-width: 450px; /* Maximum width aur kam ki */
+    width: 100%;
+    max-width: 350px;
     border-radius: 12px;
-    margin: 10px 0 10px 0; /* Top aur bottom margin rakha, left margin hataya */
+    margin: 10px auto;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
-    text-align: left;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    max-height: 300px;
-}
-.modal-content {
-    transform-origin: bottom; /* Niche se zoom start hoga */
-    transform: scale(0.9);
-    transition: transform 0.3s ease-in-out;
+    display: block;
 }
 
-.modal-open .modal-content {
-    transform: scale(1);
-}
-
-
+/* Image hover effect */
 .product-image:hover {
     transform: scale(1.1);
-}
-
-.product-container h3 {
-    font-size: 22px;
-    margin-bottom: 12px;
-    color: #000;
-    text-align: left;
-}
-
-.product-container ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    text-align: left;
-    
-    
-}
-
-.product-container ul li {
-    font-size: 17px;
-    color: black;
-    padding:  2px 0;
-    
-}
-/*======================features section=================*/
-.features-section{
-    width: 700px; /* Set width */
-    height: 300px; /* Fixed height */
-   
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Scroll enable karega agar content zyada ho */
-}
-
-/* ================= Services Section Styling ================= */
-.services-section {
-    margin-top: 12px; /* Upar ka gap aur kam kiya */
-    padding: 8px 12px; /* Andar ka padding chhota kiya */
-    border-radius: 5px; /* Thoda aur smooth edges */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Shadow halka kiya */
-    max-width: 450px; /* Width aur chhoti ki */
-    font-size: 13px; /* Text aur compact banaya */
-}
-
-.services-section h3 {
-    font-size: 15px; /* Heading ko thoda adjust kiya */
-    margin-bottom: 6px;
-}
-
-.services-section ul {
-    padding-left: 16px;
-    margin: 0;
-}
-
-.services-section li {
-    margin-bottom: 4px; /* List items ke beech gap aur kam kiya */
-}
-
-
-
-/* ================= Specifications Section Styling ================= */
-.specifications-section {
-    margin-top: 20px;
-    padding: 25px 50px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    color: #333;
-    line-height: 1.5;
-}
-
-
-/* ================= Other Machinery Section Styling ================= */
-.other-machinery {
-    margin-top: 10px;
-    /* padding: 12px; */
-    font-size: 12px;
-    
-    background: #eaf6ff;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* ================= Product Not Found Styling ================= */
-.not-found-container {
-    text-align: center;
-    padding: 50px;
-}
-
-.not-found-container h2 {
-    font-size: 26px;
-    color: red;
-}
-
-.not-found-container p {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.back-home {
-    text-decoration: none;
-    color: white;
-    background: #ff5733;
-    padding: 12px 18px;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: 0.3s;
-    display: inline-block;
-}
-
-.back-home:hover {
-    background: #e04a2b;
 }
 
 /* ================= Fullscreen Image Modal ================= */
 .modal-overlay {
     position: fixed;
-    top: 0;
+    top: 20px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -198,52 +59,146 @@
 
 .modal-content {
     position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .modal-content img {
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 85vh;
     border-radius: 12px;
     box-shadow: 0 5px 12px rgba(255, 255, 255, 0.2);
-    animation: fadeIn 0.3s ease-in-out;
 }
 
+/* Close button */
 .close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 28px;
     color: white;
     cursor: pointer;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
+/* ================= Product Title ================= */
+.product-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #8dc6ff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
 }
 
-@media (min-width: 769px) {
+/* ================= Features & Services Section (With Scroll) ================= */
+.features-section,
+.services-section {
+    width: 100%;
+    max-width: 500px; /* Fixed box size */
+    max-height: 400px; /* Height limit */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    overflow-y: auto; /* ✅ Scroll enable */
+    font-size: 18px;
+}
+
+/* ✅ Scrollbar styling */
+.features-section::-webkit-scrollbar,
+.services-section::-webkit-scrollbar {
+    width: 8px;
+}
+
+.features-section::-webkit-scrollbar-thumb,
+.services-section::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.features-section::-webkit-scrollbar-thumb:hover,
+.services-section::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ================= Specifications Section ================= */
+.specifications-section {
+    margin-top: 0px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    order: 2;
+}
+
+/* ================= Other Machinery Section ================= */
+.other-machinery {
+    margin-top: 5px;
+    order: 1;
+    padding: 10px;
+    font-size: 14px;
+    background: #eaf6ff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+   
+}
+
+/* ================= Responsive Styling ================= */
+@media (max-width: 1024px) {
     .product-container {
-        padding: 30px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .product-image {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-page {
+        padding: 80px 0;
+    }
+
+    .product-container {
+        padding: 15px;
     }
 
     .product-title {
-        font-size: 19px;
+        font-size: 18px;
+    }
+
+    .features-section {
+        max-width: 100%;
     }
 
     .product-image {
-        max-width: 450px;
-    }
-
-    .product-container ul li {
-        font-size: 17px;
-    }
-
-    .modal-content img {
         max-width: 100%;
-        max-height: 100vh;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-title {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .features-section {
+        padding: 20px;
+    }
+
+    .product-image {
+        max-width: 90%;
+        height: auto;
     }
 }
 
