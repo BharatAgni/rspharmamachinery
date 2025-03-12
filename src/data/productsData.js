@@ -1,4 +1,4 @@
-import ointment_manufacturing from "../assets/ointment-plant.jpg";
+import ointment_manufacturing from "../assets/ointment-plant.png";
 import liquid_oral_processing from "../assets/liquid-oral-processing.png";
 // import Manufacturing_Vessels from "../assets/Manufacturing-Vessels.png";
 // import storage_tanks from "../assets/storage-tanks.png";

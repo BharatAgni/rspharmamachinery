@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import about_img_1 from "../../assets/about-img-3.png";
-import ointment_plant from "../../assets/ointment-plant.jpg"; // Rename this image file
+import ointment_plant from "../../assets/ointment-plant-1.jpg"; // Rename this image file
 import about_img_3 from "../../assets/about-img-1.png";
 
 
