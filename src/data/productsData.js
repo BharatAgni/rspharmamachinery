@@ -2,7 +2,7 @@ import ointment_manufacturing from "../assets/ointment-plant.png";
 import liquid_oral_processing from "../assets/liquid-oral-processing.png";
 // import Manufacturing_Vessels from "../assets/Manufacturing-Vessels.png";
 // import storage_tanks from "../assets/storage-tanks.png";
-import sparkler_filter_press from "../assets/sparkler-filter-press.png";
+import sparkler_filter_press from "../assets/sparkler-filter-press.jpg";
 import colloidal_mill from "../assets/colidal mill 1.png"
 import coating_pan from "../assets/COATING PAN.jpg"
 import multimill from "../assets/miltimill.png"
@@ -15,11 +15,28 @@ import multimill from "../assets/miltimill.png"
 // import power_transfer_technology from "../assets/power-transfer-technology.png";
 // import reactor from "../assets/reactor.png";
 
+
+
+
+
+
+
+
+/**================================= imge section ================================================================ */
+import img_1 from "../assets/images/Gallery-Photos-1.jpg"
+import img_2 from "../assets/images/Gallery-Photos-10.jpg"
+import img_3 from "../assets/images/Gallery-Photos-11.jpg"
+import img_4 from "../assets/images/Gallery-Photos-12.jpg"
+import img_5 from "../assets/images/Gallery-Photos-13.jpg"
+import img_6 from "../assets/images/Gallery-Photos-14.jpg"
+import img_7 from "../assets/images/Gallery-Photos-15.jpg"
+
 const products = {
     "ointment-liquid": {
         "ointment-manufacturing-plant": {
             name: "Ointment Manufacturing Plant",
             image: ointment_manufacturing,
+            gallery: [img_1,img_2,img_3,img_4,img_5,img_6,img_7 ],
             description: "Ointment Manufacturing Plant is designed for the production of ointments, creams, lotions, and gels in pharmaceutical and cosmetic industries. It ensures high efficiency and GMP compliance for quality manufacturing.",
             features: [
                 <strong>Main Vessel:</strong>,
@@ -58,6 +75,17 @@ const products = {
                 validation: "GMP & FDA-compliant validation services.",
                 maintenance: "Annual maintenance contracts (AMC) available.",
                 support: "24/7 customer support for troubleshooting and assistance."
+            },
+            other:{
+                VacuumProcessingVessel:  "For homogeneous mixing & emulsification",
+                WaxAndWaterPhaseVessels: "For heating & melting raw materials",
+                AgitatorAndHomogenizer: "For smooth blending & consistency",
+                JacketedConstruction: "For precise temperature control",
+                VacuumSystem :  "For de-aeration & bubble-free product",
+                CIPSystem: "For easy cleaning & maintenance",
+                ProductTransferPump: "For seamless material transfer",
+                StorageTanks: "For holding final product before filling",
+                ControlPanel: "For automated operation & monitoring",
             }
            
         },
@@ -96,8 +124,17 @@ const products = {
                         validation: "GMP & FDA-compliant validation services.",
                         maintenance: "Annual maintenance contracts (AMC) available.",
                         support: "24/7 customer support for troubleshooting and assistance."
-                    }
-        },
+                    },
+            other: {
+                motor: "High-power motor for efficient operation",
+                screenAndBlades: "Different interchangeable screens and blades",
+                controlPanel: "User-friendly operation panel",
+                stainlessSteelBody: "GMP-compliant SS 304/316 body",
+                safetyFeatures: "Overload protection, emergency stop button",
+                hopperAndDischargeChute: "Hygienic and easy-to-clean design",
+                castorWheels: "For easy mobility"
+            },
+},
         "manufacturing-vessels": {
             name: "Manufacturing Vessels",
             // image: Manufacturing_Vessels,
@@ -141,7 +178,16 @@ const products = {
                 validation: "GMP & FDA-compliant validation services.",
                 maintenance: "Annual maintenance contracts (AMC) available.",
                 support: "24/7 customer support for troubleshooting and assistance."
-            }
+            },
+            other:{
+                LimpetCoil:  "For heating & cooling",
+                VacuumSystem : "For easy material transfer",
+                AgitatorAndStirrer: "For uniform mixing",
+                JacketedConstruction:"For temperature control",
+                CIPNozzles:  "For automatic cleaning",
+                LevelIndicatorsSensors:"For process monitoring",
+                SamplingValve:"For quality testing"
+                            },
         },
         // "storage-tanks": {
         //     name: "Storage Tanks",
@@ -193,6 +239,16 @@ const products = {
                 validation: "GMP & FDA-compliant validation services.",
                 maintenance: "Annual maintenance contracts (AMC) available.",
                 support: "24/7 customer support for troubleshooting and assistance."
+            },
+            other: {
+                StainlessSteelFilterPlates: "Ensures efficient filtration & durability",
+                InterlockingPlateDesign: "Provides uniform pressure distribution",
+                HydraulicManualClosingSystem:"For secure sealing & easy operation",
+                PressureGaugeAndSafetyValve: "For monitoring & protection",
+                SightGlassAssembly: "To observe filtration process",
+                DrainAndSamplingValves:  "For easy discharge & quality checks",
+                PumpSystem:  "For smooth liquid transfer",
+                CIPCompatibleDesign: "For hassle-free cleaning"
             }
         }
     },

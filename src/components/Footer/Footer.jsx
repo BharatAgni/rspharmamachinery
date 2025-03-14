@@ -27,15 +27,15 @@ const Footer = () => {
           </p>
           <p>
             <img src={phoneIcon} alt="Phone" className="icon" />
-            <a href="tel:+918884427770">+91 8884427770</a>
+            <a href="tel:+917757873724">+91 7757873724</a>
           </p>
           <p>
             <img src={emailIcon} alt="Email" className="icon" />
-            <a href="mailto:agnivesh514@gmail.com">agnivesh514@gmail.com</a>
+            <a href="mailto:rspharmamachinery@gmail.com">rspharmamachinery@gmail.com</a>
           </p>
           <p>
             <img src={whatsappIcon} alt="WhatsApp" className="icon" />
-            <a href="https://wa.me/918884427770" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/+917757873724" target="_blank" rel="noopener noreferrer">
               WhatsApp Us
             </a>
           </p>
