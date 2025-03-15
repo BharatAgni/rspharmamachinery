@@ -27,7 +27,7 @@ const Footer = () => {
           </p>
           <p>
             <img src={phoneIcon} alt="Phone" className="icon" />
-            <a href="tel:+917757873724">+91 7757873724</a>
+            <a href="tel:+918744016025,">Admin : +91 8744016025,7757873724</a>
           </p>
           <p>
             <img src={emailIcon} alt="Email" className="icon" />
@@ -35,7 +35,7 @@ const Footer = () => {
           </p>
           <p>
             <img src={whatsappIcon} alt="WhatsApp" className="icon" />
-            <a href="https://wa.me/+917757873724" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/+918744016025" target="_blank" rel="noopener noreferrer">
               WhatsApp Us
             </a>
           </p>
