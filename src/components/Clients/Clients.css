@@ -1,7 +1,7 @@
 .Client{
     padding-left: 15%;
     padding-right: 15%;
-    background: linear-gradient(var(--secondary-color) 30% 31%, var(--white-color) 31%);
+    background: linear-gradient(var(--secondary-color) 20% 21%, var(--white-color) 31%);
 }
 
 .Client .img{
@@ -61,8 +61,8 @@
 /****************Media Query**********************/
 @media (max-width: 1024px){
     .Client{
-        padding-left: 8%;
-        padding-right: 8%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
 
@@ -78,7 +78,7 @@
 
     .attendess .item{
         flex-basis: 32%;
-        padding: 30px 0;
+        padding: 30px 15;
     }
 }
 
@@ -102,13 +102,15 @@
     .attendess .item{
         flex-basis: 100%;
         margin-bottom: 15px;
+        margin-top: 15px;
     }
 }
 
 @media (max-width: 425px){
     .Client .img img{
-        height: 100%;
-        width: auto;
+        margin-top: 30%;
+        height: 60%;
+        width: 100%;
     }
 }
 

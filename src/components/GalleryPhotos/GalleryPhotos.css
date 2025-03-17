@@ -130,6 +130,9 @@
     .photos {
         max-width: 95%;
         max-height: 95%;
+        align-items: center;
+        justify-content: center;
+        
     }
 
     .next, .prev {

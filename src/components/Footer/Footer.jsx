@@ -71,7 +71,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>Copyright © 2025 Your Company | Website Design by YourCompany</p>
+        <p> © Copyright 2023 https://www.rspharmamachinery.in/ | Website Design by Bharat i Tech </p>
       </div>
     </footer>
   );
