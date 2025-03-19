@@ -15,7 +15,8 @@ nav {
 
 /* ✅ Sticky Navbar */
 nav.nav-dark {
-    background: var(--secondary-color);
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -206,7 +207,7 @@ nav.nav-dark {
         top: 0;
         left: -300px;
         bottom: 0;
-        background-color: var(--secondary-color);
+        background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
         flex-direction: column;
         width: 100px;
         justify-content: start;
@@ -247,7 +248,20 @@ nav.nav-dark {
     .popup-close {
         font-size: 14px;
     }
+        .nav-link {
+            padding-top: 50px; /* Yeh sirf Home aur Products ko neeche karega */
+            
+        }
+    
 }
+@media (max-width: 480px) {
+    .nav-link {
+        padding-top: 50px; /* Yeh sirf Home aur Products ko neeche karega */
+        
+    }
+}
+
+
 
 
 

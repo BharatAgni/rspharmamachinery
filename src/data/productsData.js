@@ -6,14 +6,19 @@ import sparkler_filter_press from "../assets/sparkler-filter-press.jpg";
 import colloidal_mill from "../assets/colidal mill 1.png"
 import coating_pan from "../assets/COATING PAN.jpg"
 import multimill from "../assets/miltimill.png"
-// import fluid_bed_processor from "../assets/fluid-bed-processor.png"; // Add missing image imports
-// import rapid_mixture_granulator from "../assets/rapid-mixture-granulator.png";
-// import vibro_shifter from "../assets/vibro-shifter.png";
-// import multimill from "../assets/multimill.png";
-// import co_mill from "../assets/co-mill.png";
+import fluid_bed_processor from "../assets/Fluid bed dryer  11.jpg"; // Add missing image imports
+import rapid_mixture_granulator from "../assets/raipid mixture Granulator(High shear mixture).png";
+import vibro_shifter from "../assets/vibro-sifter.jpg";
+import co_mill from "../assets/comill.jpeg.png";
 // import colloidal_mill from "../assets/colloidal-mill.png";
 // import power_transfer_technology from "../assets/power-transfer-technology.png";
-// import reactor from "../assets/reactor.png";
+import VaccumeTray_dryer from "../assets/vacuum-tray-dryer.png";
+import air_tray_dryer from "../assets/steam-air-tray-dryer.png"
+import auto_coater from "../assets/auto-coater.png"
+import lifter from "../assets/lifter1 rs.png"
+import stand_homogenizer  from "../assets/stand homogenizer.png"
+import inline_homogenizer from "../assets/inline-homogenizer.jpg"
+ 
 
 
 
@@ -189,27 +194,6 @@ const products = {
                 SamplingValve:"For quality testing"
                             },
         },
-        // "storage-tanks": {
-        //     name: "Storage Tanks",
-        //     image: storage_tanks,
-        //     description: "Storage Tanks are designed for safe storage of raw materials, finished products, and intermediates in pharmaceutical and food industries.",
-        //     features: [
-                 
-
-        //     ],
-        //     specifications: {
-        //         capacity: "500 - 50,000 L",
-        //         material: "SS 304 / SS 316",
-        //         type: "Jacketed / Non-Jacketed"
-        //     },
-        //     services: {
-        //         description: "We have team of qualified engineers for after sales service of supplied equipment. Our services includes installation, commissioning, validation, Service AMC etc.",
-        //         commissioning: "Ensuring equipment is tested and fully operational.",
-        //         validation: "GMP & FDA-compliant validation services.",
-        //         maintenance: "Annual maintenance contracts (AMC) available.",
-        //         support: "24/7 customer support for troubleshooting and assistance."
-        //     }
-        // },
         "sparkler-filter-press": {
             name: "Sparkler Filter Press",
             image: sparkler_filter_press,
@@ -256,7 +240,7 @@ const products = {
     "granulation": {
         "fluid-bed-processor": {
             name: "Fluid Bed Processor",
-            // image: fluid_bed_processor, // Added image
+            image: fluid_bed_processor, // Added image
             description: "Fluid Bed Processor is used for drying, granulation, and coating of pharmaceutical powders and granules.",
             features: [
                     "The process unit is single pieces welded design, made of stainless steel of SS.",
@@ -317,7 +301,7 @@ const products = {
         },
         "rapid-mixture-granulator": {
             name: "Rapid Mixture Granulator",
-            // image: rapid_mixture_granulator, // Added image
+            image: rapid_mixture_granulator, // Added image
             description: "Rapid Mixture Granulator ensures fast and efficient wet granulation process in pharmaceutical manufacturing.",
             features: [
                 "Suitable for dry mixing of products in granule form.",
@@ -363,7 +347,7 @@ const products = {
         },
         "vibro-shifter": {
             name: "Vibro Shifter",
-            // image: vibro_shifter, // Added image
+            image: vibro_shifter, // Added image
             description: "Vibro Shifter is used for particle size separation in pharmaceutical, food, and chemical industries.",
             features: [
                 "Multi-deck screening for efficient separation",
@@ -432,7 +416,7 @@ const products = {
     },
         "co-mill": {
             name: "Co-Mill",
-            // image: co_mill, // Added image
+            image: co_mill, // Added image
             description: "Co-Mill is used for size reduction, de-lumping, and milling applications in pharmaceutical industries.",
             features: [
                 "Uniform particle size distribution",
@@ -519,7 +503,7 @@ const products = {
     "drying-processing": {
         "vacuum-tray-dryer": {
             name: "Vacuum Tray Dryer",
-            // image: vacuum_tray_dryer, // Added image
+            image: VaccumeTray_dryer, // Added image
             description: "Vacuum Tray Dryer is used for drying heat-sensitive materials under vacuum conditions in pharmaceutical and chemical industries.",
             features: [
                 "Low-temperature drying for sensitive products",
@@ -547,7 +531,7 @@ const products = {
 
         "air-tray-dryer": {
             name: "Air Tray Dryer",
-            // image: air_tray_dryer, // Added image
+            image: air_tray_dryer, // Added image
             description: "Air Tray Dryer is used for drying of granules, powders, and food products in pharmaceutical and food industries.",
             features: [
                 "Uniform drying with hot air circulation",
@@ -575,7 +559,7 @@ const products = {
 
         "auto-coater":{
             name: "Auto Coater",
-            // image: auto_coater, // Added image
+            image: auto_coater, // Added image
             description: "Auto Coater is used for coating tablets, pills, and granules with a uniform and controlled coating layer.",
             features: [
                 "Perforated coating pan for efficient coating",
@@ -636,7 +620,7 @@ const products = {
         "others":{
             "stand-homogenizer":{
                 name: "Stand Homogenizer",
-                // image: stand_homogenizer, // Added image
+                image: stand_homogenizer, // Added image
                 description: "Stand Homogenizer is used for high-speed mixing, emulsifying, and homogenizing of liquid products in pharmaceutical and food industries.",
                 features: [
                     "High-speed rotor-stator design for efficient mixing",
@@ -663,7 +647,7 @@ const products = {
 
             "lifter":{
                 name: "Lifter",
-                // image: lifter, // Added image
+                image: lifter, // Added image
                 description: "Lifter is used for safe lifting and handling of materials in pharmaceutical manufacturing and material handling applications.",
                 features: [
                     "Stainless steel construction for durability",
@@ -718,7 +702,7 @@ const products = {
 
             "inline-homogenizer":{
                 name: "Inline Homogenizer",
-                // image: inline_homogenizer, // Added image
+                image: inline_homogenizer, // Added image
                 description: "Inline Homogenizer is used for continuous mixing, emulsifying, and homogenizing of liquid products in pharmaceutical and food industries.",
                 features: [
                     "High-speed rotor-stator design for efficient mixing",

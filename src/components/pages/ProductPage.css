@@ -1,6 +1,7 @@
 /* ================= Product Page Styling ================= */
 .product-page {
-    background: linear-gradient(135deg, #1e3c72, #2a5298, #88aaa7); 
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
     min-height: 100vh;
     padding: 80px 0;
     display: flex;
@@ -231,13 +232,13 @@
 }
 
 /* Image will always fit inside modal without changing modal size */
-.modal-image-wrapper img {
+/* .modal-image-wrapper img {
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
     object-fit: contain;
-}
+} */
 
 .close-btn {
     position: absolute;
@@ -309,6 +310,13 @@
     .product-image {
         max-width: 100%;
         height: auto;
+    }
+    .modal-image-wrapper img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
     }
 
     .modal-content {
