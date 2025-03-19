@@ -1,8 +1,8 @@
 import React from 'react';
 import './AboutUs.css'; // ✅ Import CSS
-import photo1 from '../../assets/about-img-3.png';
+import photo1 from '../../assets/industries-photos-6.jpg';
 // import photo2 from '../../assets/IMG-2.jpg';
-import photo3 from '../../assets/about-img-1.png';
+import photo3 from '../../assets/industries-photos-3.jpg';
 // import photo4 from '../../assets/IMG-4.jpg';
 // import photo5 from '../../assets/IMG-5.jpg';
 // import photo6 from '../../assets/IMG-6.jpg';

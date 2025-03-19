@@ -1,13 +1,22 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
-import about_img_1 from "../../assets/about-img-3.png";
-import ointment_plant from "../../assets/ointment-plant-1.jpg"; // Rename this image file
-import about_img_3 from "../../assets/about-img-1.png";
+import about_img_1 from "../../assets/industries-photos.jpg"
+import about_img_2 from "../../assets/about-img-3.png";
+import about_img_3 from "../../assets/industries-photos-1.jpg"
+import about_img_4 from "../../assets/about-img-1.png";
+import about_img_5 from "../../assets/industries-photos-2.jpg"
+// import about_img_6 from "../../assets/ointment-plant-1.jpg"; // Rename this image file
+import about_img_7 from "../../assets/industries-photos-3.jpg"
+import about_img_8 from "../../assets/industries-photos-4.jpg"
+import about_img_9 from "../../assets/industries-photos-5.jpg"
+
+
+
 
 
 
 const Hero = () => {
-  const images = [about_img_1, ointment_plant, about_img_3,];
+  const images = [about_img_1,about_img_2 , about_img_3,about_img_4,about_img_5,about_img_7,about_img_8,about_img_9,];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
