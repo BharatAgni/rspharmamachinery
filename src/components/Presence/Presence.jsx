@@ -8,10 +8,7 @@ import Presence_img_4 from "../../assets/VaccumeTray dryer.jpg"
 const Presence = () => {
   return (
     <div className='Presence-main wrapper'>
-    <Title title="OUR INDUSTRY PRESENCE" />
-    {/* <p style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "10px" }}>
-  Our products are used in many industries such as:
-</p> */}
+  <Title title="OUR INDUSTRY PRESENCE" className="title" />
 <ul style={{ listStyleType: "disc", paddingLeft: "20px", lineHeight: "1.8" }}>
   <li>Pharmaceutical</li>
   <li>Chemical</li>

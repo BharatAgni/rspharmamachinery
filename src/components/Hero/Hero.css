@@ -124,10 +124,10 @@
 
 @media (max-width: 480px) {
   .hero-image-container{
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
     transform-origin: center;
-    width: 100vh; /* Full height as width after rotation */
-    height: 100vw; /* Full width as height after rotation */
+    width: 50vh; /* Full height as width after rotation */
+    height: 90vw; /* Full width as height after rotation */
     object-fit: cover;
 
   }

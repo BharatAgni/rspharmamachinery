@@ -3,6 +3,17 @@
     padding-bottom: 20px;
     
 }
+.Presence-main .title {
+    font-size: 28px;  /* Size bada kar diya */
+    font-weight: bold; /* Bold kar diya */
+    text-align: center; /* Center align */
+    text-transform: uppercase; /* Sab capital letters */
+    letter-spacing: 2px; /* Letters ke beech spacing */
+    color: #333; /* Dark gray color */
+    margin-bottom: 20px; /* Niche gap */
+    margin-top: 1px;
+  }
+  
 
 .Presence{
     padding-top: 20px; ;
@@ -93,4 +104,14 @@
         flex-basis: 100%;
         height: 350px;
     }
+    .Presence-main .title {
+        font-size: 28px;  /* Size bada kar diya */
+        font-weight: bold; /* Bold kar diya */
+        text-align: center; /* Center align */
+        text-transform: uppercase; /* Sab capital letters */
+        letter-spacing: 2px; /* Letters ke beech spacing */
+        color: #333; /* Dark gray color */
+        margin-bottom: 20px; /* Niche gap */
+        margin-top: -70px;
+      }
 }
