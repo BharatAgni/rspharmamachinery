@@ -137,9 +137,9 @@
         flex-direction: column; /* Small screen pe stacked layout */
         align-items: center;
         background: #00d4ff; /* Jo bhi background color hai */
-        padding: 5px; /* Zyada readable banane ke liye */
+        padding: 6px; /* Zyada readable banane ke liye */
         border-radius: 8px;
-        width: 100%;
+        width: 110%;
     }
 
     .testifier-info {
