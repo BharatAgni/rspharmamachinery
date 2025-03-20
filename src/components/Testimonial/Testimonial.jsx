@@ -57,7 +57,15 @@ const Testimonial = () => {
 
     return (
         <div className="testimonials">
-            <Title title="What Our Clients Are Saying" titleText="Explore the impact we have made on our clients" />
+            <Title title="Skilled Engineering & Maintenance Team" titleText="Expert Engineers for Reliable Pump Repair & Maintenance
+
+
+
+
+
+
+
+" />
             <img src={arrow_left} className="arrow-left" alt="Previous" onClick={handlePrev} />
             <img src={arrow_right} className="arrow-right" alt="Next" onClick={handleNext} />
             <div className="slider" ref={slider}>

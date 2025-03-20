@@ -38,8 +38,9 @@
 
 .about-details-container .left-item h3{
     font-weight: 700;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .about-details-container .left-item p{
@@ -49,7 +50,7 @@
 .about-details-container .right-item{
     flex-basis: 28%;
     overflow: hidden;
-    height: 250px;
+    height: 310px;
     box-shadow: var(--box-shadow);
 }
 
@@ -71,8 +72,13 @@
     .about-details-container{
         width: 100%;
         left: 0%;
-        top: -50px;
-        
+        top: -50px;  
+    }
+    .about-details-container .right-item{
+        flex-basis: 28%;
+        overflow: hidden;
+        height: 250px;
+        box-shadow: var(--box-shadow);
     }
 }
 
@@ -91,15 +97,17 @@
     }
 
     .about-details-container .right-item{
-        height: 400px;
+        height: 380px;
+        margin-top: 10px;
     }
 }
 
 @media(max-width: 425px){
     .about-details .main-img{
         height: 180px;
-        
-       
+    }
+    .about-details-container .right-item{
+        margin-top: 10px;
     }
     
 }

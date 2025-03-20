@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutDetails.css';
 import main_img from '../../assets/about-img-3.png';
-import About_img from '../../assets/about-img-1.png';
+import About_img from '../../assets/industries-photos-1.jpg';
 
 const AboutDetails = () => {
   return (
@@ -19,9 +19,9 @@ const AboutDetails = () => {
           Our company has been claimed for quality and excellence in the range of products offered. We have committed ourselves to deliver only the finest products to our clients with 2 years of warranty, which is 2 time of our competitors.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus eaque commodi in.
+            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus eaque commodi in.
             Architecto animi ratione, consectetur illum sapiente rem incidunt. Alias exercitationem culpa
-            voluptates, aut similique voluptatum labore quasi.
+            voluptates, aut similique voluptatum labore quasi. */}
           </p>
         </div>
         <div className='right-item'>
