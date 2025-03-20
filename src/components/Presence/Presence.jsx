@@ -2,16 +2,16 @@ import React from 'react'
 import './Presence.css'
 import Title from '../Title/Title'
 import Presence_img_1 from "../../assets/FLUIID BED PROCESSOR 1.png"
-import Presence_img_2 from "../../assets/presence-img-2.png"
-import Presence_img_3 from "../../assets/COATING PAN.jpg"
-import Presence_img_4 from "../../assets/presence-img-4.png"
+import Presence_img_2 from "../../assets/Rapid Mixer Granulator.jpg"
+import Presence_img_3 from "../../assets/Ointment Manufacturing Plant 3.jpg"
+import Presence_img_4 from "../../assets/VaccumeTray dryer.jpg"
 const Presence = () => {
   return (
     <div className='Presence-main wrapper'>
     <Title title="OUR INDUSTRY PRESENCE" />
-    <p style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "10px" }}>
+    {/* <p style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "10px" }}>
   Our products are used in many industries such as:
-</p>
+</p> */}
 <ul style={{ listStyleType: "disc", paddingLeft: "20px", lineHeight: "1.8" }}>
   <li>Pharmaceutical</li>
   <li>Chemical</li>
@@ -23,30 +23,20 @@ const Presence = () => {
 </ul>
 
   
-        <p style={{ color: "black", marginBottom: "20px", lineHeight: "1.5", padding: "20px", textAlign: "left" }}>
-        <strong>RS PHARMA MACHINERY</strong> Group of Companies is a leading manufacturer and designer of machineries,  
-    manufacturing plant in the state of <strong>Maharashtra – INDIA</strong>.  
-    RS PHARMA MACHINERY is offering <strong>World-Class Equipment</strong> with <strong>German technology</strong> for  
-    <strong> Bulk Drugs</strong>, <strong>Cosmetics & Food</strong>, Pharmaceuticals, Chemicals Industries.  
-    Machinery is an added advantage of automatic processing & packaging machineries for  
-    <strong>Dairy, Distilleries & Pesticides, Cosmetics & Breweries</strong>, etc.  
-    Apart from this, the company also manufactures automatic machines for  
-    <strong> Lube & Toiletries Packaging</strong>, <strong>Food & Edible Oil Packaging Machineries</strong>,  
-    <strong>Ancillaries Packaging Equipments</strong> as per the international quality standards at cost-effective rates.
-                </p>
-
-
-                <p style={{ color: "black", marginBottom: "20px", lineHeight: "1.5", padding: "20px", textAlign: "left" }}>
-                We design and manufacture high quality machines for pharmaceutical, nutraceutical and cosmetic industries worldwide. 
-                Also We offered  API,Cosmetics, Beverages, Pharmaceutical ,Bulk Drug, Beverages, Chemicals, Edible Oil, Lubricants,
-                 Dairy, Detergents, Pesticides ,Distilleries, Fertilizers, Food, Nutraceuticals, Paints, Lubricants , Pigments, Plastics 
+        <p style={{ color: "black", marginBottom: "10px", lineHeight: "1.5", padding: "10px", textAlign: "left" }}>
+        <strong>RS PHARMA MACHINERY</strong> Group of Companies is a leading manufacturer & design of machineries According to Specific requirement, our manufacturing unit in Vasai (E) Maharashtra – INDIA.
+           </p>
+                <p style={{ color: "black", marginBottom: "10px", lineHeight: "1.5", padding: "10px", textAlign: "left" }}>
+                We design and manufacture high quality machines for pharmaceutical, nutraceutical and cosmetic industries worldwide. Also We offered API, Cosmetics, Beverages, Pharmaceutical ,Bulk Drug, Beverages, Chemicals, Edible Oil, Lubricants, Dairy, Detergents, Pesticides ,Distilleries, Fertilizers, Food, Nutraceuticals, Paints, Lubricants , Pigments, Plastics including Liquid, Powder, Paste based manufacturing industries machineries and Equipment’s / Plant and Turnkey Solutions.
                  including Liquid, Powder, Paste based manufacturing industries machineries and Equipments / Plant and Turnkey Solution 
                 </p>
-                <p style={{ padding: "20px", textAlign: "left"}}> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus eaque commodi in. 
-                    Architecto animi ratione, consectetur illum sapiente rem incidunt. Alias exercitationem culpa 
-                    voluptates, aut similique voluptatum labore quasi.
+                <p style={{ padding: "10px", textAlign: "left"}}> 
+                Our Machines is an added advantage of automatic processing & packaging Dairy, Distilleries & Pesticides, Cosmetics & Breweries, etc. Apart from this, the company also manufactures automatic machines for Lube & Toiletries Packaging, as per the international quality standards at cost-effective rates.
                 </p>
+
+                  <p style={{ padding: "10px", textAlign: "left"}}>  
+                  We are using laser tech Cutting edge technology for High precision, For Bulk Drugs, Cosmetics & Food, Pharmaceuticals, Chemicals Industries.
+                  </p>
       <div className="Presence">
         <div className='PRODUCTS'>
             <img src={Presence_img_1} alt='' />
@@ -63,7 +53,7 @@ const Presence = () => {
         <div className='PRODUCTS'>
             <img src={Presence_img_3} alt='' />
             <div>
-                <span className='PRODUCTS-title'>COATING PAN</span>
+                <span className='PRODUCTS-title'>Ointment Manufacturing Plant</span>
             </div>
         </div>
         <div className='PRODUCTS'>
