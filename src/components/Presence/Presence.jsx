@@ -9,7 +9,19 @@ const Presence = () => {
   return (
     <div className='Presence-main wrapper'>
   <Title title="OUR INDUSTRY PRESENCE" className="title" />
-<ul style={{ listStyleType: "disc", paddingLeft: "20px", lineHeight: "1.8" }}>
+  <ul style={{ 
+  display: "flex", 
+  flexWrap: "wrap", 
+  justifyContent: "flex-start", 
+  gap: "30px", 
+  paddingLeft: "20px", 
+  listStyleType: "disc", 
+  listStylePosition: "inside", 
+  fontWeight: "bold",
+  maxWidth: "600px" ,
+  marginBottom: "50px",
+  marginTop: "50px"
+}}>
   <li>Pharmaceutical</li>
   <li>Chemical</li>
   <li>Food</li>
@@ -18,6 +30,19 @@ const Presence = () => {
   <li>Engineering</li>
   <li>Agro-Chemical</li>
 </ul>
+
+<style>
+{`
+  @media (max-width: 768px) {
+    ul {
+      flex-direction: column; 
+      gap: 10px; 
+      max-width: 100%;
+    }
+  }
+`}
+</style>
+
 
   
         <p style={{ color: "black", marginBottom: "10px", lineHeight: "1.5", padding: "10px", textAlign: "left" }}>
