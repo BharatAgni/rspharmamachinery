@@ -28,7 +28,7 @@ const Presence = () => {
            </p>
                 <p style={{ color: "black", marginBottom: "10px", lineHeight: "1.5", padding: "10px", textAlign: "left" }}>
                 We design and manufacture high quality machines for pharmaceutical, nutraceutical and cosmetic industries worldwide. Also We offered API, Cosmetics, Beverages, Pharmaceutical ,Bulk Drug, Beverages, Chemicals, Edible Oil, Lubricants, Dairy, Detergents, Pesticides ,Distilleries, Fertilizers, Food, Nutraceuticals, Paints, Lubricants , Pigments, Plastics including Liquid, Powder, Paste based manufacturing industries machineries and Equipment’s / Plant and Turnkey Solutions.
-                 including Liquid, Powder, Paste based manufacturing industries machineries and Equipments / Plant and Turnkey Solution 
+                
                 </p>
                 <p style={{ padding: "10px", textAlign: "left"}}> 
                 Our Machines is an added advantage of automatic processing & packaging Dairy, Distilleries & Pesticides, Cosmetics & Breweries, etc. Apart from this, the company also manufactures automatic machines for Lube & Toiletries Packaging, as per the international quality standards at cost-effective rates.
