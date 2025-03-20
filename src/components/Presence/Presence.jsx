@@ -18,7 +18,7 @@ const Presence = () => {
   listStyleType: "disc", 
   listStylePosition: "inside", 
   fontWeight: "bold",
-  maxWidth: "600px" ,
+  maxWidth: "900px" ,
   marginBottom: "50px",
   marginTop: "50px"
 }}>

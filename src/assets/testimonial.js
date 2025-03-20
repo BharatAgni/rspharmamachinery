@@ -46,7 +46,7 @@ const testimonials = [
       email: "johndoe@example.com",
       linkedin: "https://www.linkedin.com/in/johndoe",
       message: "Choosing to pursue my degree at Online-University was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.",
-      course: "Business",
+      course: "Engineer",
     },
     {
       id: 5,
@@ -76,7 +76,7 @@ const testimonials = [
       email: "johndoe@example.com",
       linkedin: "https://www.linkedin.com/in/johndoe",
       message: "Choosing to pursue my degree at Online-University was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.",
-      course: "Helper",
+      course: "Enginner",
     },
   ];
 
