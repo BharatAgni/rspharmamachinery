@@ -76,15 +76,22 @@
 }
 
 
-.testifier-info h4{
-    color: var(--white-color);
-    font-size: 25px;
-    opacity: 0.8=9;
+.testifier-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00d4ff; /* Jo bhi background color hai */
+    padding: 15px;
+    border-radius: 8px;
+    gap: 50px;
 }
 
-.testifier-info span{
-    color: var(--white-color);
-    opacity: 0.8;
+.testifier-info {
+    flex: 1; /* Left side ka content */
+}
+
+.testifier-contacts {
+    text-align: left; /* Right align karne ke liye */
 }
 
 
@@ -99,28 +106,64 @@
     .testimonials{
         width: 100%;
     }
+    .testifier-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #00d4ff; /* Jo bhi background color hai */
+        padding: 0px;
+        border-radius: 8px;
+       
+    }
+    
+    .testifier-info {
+        flex: 1; /* Left side ka content */
+    }
+    
+    .testifier-contacts {
+        text-align: left; /* Right align karne ke liye */
+    }
 }
 
-@media (max-width: 576px){
-    .testifier{
+@media (max-width: 576px) {
+    .testifier {
         flex-direction: column;
-        justify-content: center;
+        align-items: center; /* Center align karne ke liye */
+        text-align: center; /* Content ko center align karne ke liye */
     }
-    .testifier-info{
+
+    .testifier-container {
+        display: flex;
+        flex-direction: column; /* Small screen pe stacked layout */
+        align-items: center;
+        background: #00d4ff; /* Jo bhi background color hai */
+        padding: 5px; /* Zyada readable banane ke liye */
+        border-radius: 8px;
         width: 100%;
-        text-align: center;
     }
 
-    .testifier-info h4{
-        font-size: 20px;
+    .testifier-info {
+        width: 100%; /* Full width */
+        text-align: center; /* Center align */
+        margin-bottom: 10px; /* Naam aur details ke beech space */
     }
 
-    .testimonials .slider .slide{
+    .testifier-contacts {
+        width: 100%;
+        text-align: left; /* Contacts ko bhi center align */
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Contact items ke beech ka gap */
+    }
+
+    .testimonials .slider .slide {
         margin: 20px 0;
     }
 
-    .slide .content{
+    .slide .content {
         width: 85%;
+        margin: 0 auto; /* Center content */
     }
 }
+
 

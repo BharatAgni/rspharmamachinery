@@ -9,7 +9,7 @@ import Indicator from '../Indicator/Indicator';
 const Testimonial = () => {
     const slider = useRef(null);
     const [sliderCount, setSliderCount] = useState(0);
-    const testimonialLength = testimonials.length; // ✅ Fixed: Removed setTestimonialLength
+    const testimonialLength = testimonials.length;
     const intervalRef = useRef(null);
 
     const handleNext = () => {
@@ -21,10 +21,10 @@ const Testimonial = () => {
     };
 
     const startSlider = useCallback(() => {
-        stopSlider(); // Stop previous interval if running
+        stopSlider();
         intervalRef.current = setInterval(() => {
             setSliderCount((prev) => (prev < testimonialLength - 1 ? prev + 1 : 0));
-        }, 5000);
+        }, 100000);
     }, [testimonialLength]);
 
     const stopSlider = () => {
@@ -35,14 +35,11 @@ const Testimonial = () => {
 
     useEffect(() => {
         startSlider();
-
-        const sliderEl = slider.current; // Store reference to avoid null errors
-
+        const sliderEl = slider.current;
         if (sliderEl) {
             sliderEl.addEventListener('mouseenter', stopSlider);
             sliderEl.addEventListener('mouseleave', startSlider);
         }
-
         return () => {
             stopSlider();
             if (sliderEl) {
@@ -50,7 +47,7 @@ const Testimonial = () => {
                 sliderEl.removeEventListener('mouseleave', startSlider);
             }
         };
-    }, [startSlider]); // ✅ Fixed: Added startSlider as a dependency
+    }, [startSlider]);
 
     useEffect(() => {
         if (slider.current) {
@@ -71,10 +68,18 @@ const Testimonial = () => {
                                 <div className="img">
                                     <img src={testimony.photo} alt={testimony.name} />
                                 </div>
-                                <div className="testifier-info">
-                                    <h4>{testimony.name}</h4>
-                                    <span>{testimony.course}</span>
-                                </div>
+                                <div className="testifier-container">
+    <div className="testifier-info">
+        <h4>{testimony.name}</h4>
+        <span>{testimony.course}</span>
+    </div>
+    <div className="testifier-contacts">
+        {testimony.phone && <p>📞 {testimony.phone}</p>}
+        {testimony.email && <p>📧 <a href={`mailto:${testimony.email}`}>{testimony.email}</a></p>}
+        {testimony.linkedin && <p>🔗 <a href={testimony.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></p>}
+    </div>
+</div>
+
                             </div>
                             <div className="testimony">{testimony.message}</div>
                         </div>
