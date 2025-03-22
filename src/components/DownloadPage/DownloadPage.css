@@ -1,0 +1,103 @@
+.download-page {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  margin-top: 90px;
+}
+
+.banner-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.download-title {
+  font-size: 28px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #ff0101;
+  padding: 15px;
+  background-image: url('../../assets/map-h3.webp'); /* अपनी image का path सही करो */
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Container Responsive Layout */
+.pdf-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual PDF Item */
+.pdf-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.pdf-item:hover {
+  transform: translateY(-5px);
+}
+
+.pdf-thumbnail {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  border-radius: 5px;
+}
+
+.pdf-title {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #222;
+}
+
+.download-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+
+/* For tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+  .pdf-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* For mobile devices (below 768px) */
+@media (max-width: 768px) {
+  .pdf-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 column */
+  }
+  
+  .pdf-title {
+    font-size: 16px;
+  }
+
+  .download-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

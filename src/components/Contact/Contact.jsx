@@ -49,8 +49,8 @@ const Contact = () => {
           <p><strong>Tel:</strong> +91 87440 16025 /  +91 7757873724</p>
           <p><strong>Phone/Whatsapp:</strong> +91 87440 16025</p>
           <p><strong>E-mail:</strong> rspharmamachinery@gmail.com</p>
-          <p><strong>RS PHARMA Add:</strong>CVQM+HXJ, Pelhar, Maharashtra 401208</p>
-          <p><strong>RS PHARMA Factory Add:</strong> CVQM+HXJ, Pelhar, Maharashtra 401208</p>
+          <p><strong>RS PHARMA Add:</strong>04/20111, JABAR PADA, UMAR COMPOUND ROAD VASAI EAST MAHARASHTRA, 401208 </p>
+          <p><strong>RS PHARMA Factory Add:</strong> 04/20111, JABAR PADA, UMAR COMPOUND ROAD VASAI EAST MAHARASHTRA, 401208 </p>
         </div>
         <div className="contact-image">
           <img src={about_img_1} alt="Company Building" />
@@ -77,8 +77,8 @@ const Contact = () => {
 
         {/* Address Section */}
         <div className="map-address">
-          <p><strong>SPM Office Add:</strong> 04/20111, JABAR PADA, UMAR COMPOUND ROAD VASAI EAST MAHARASHTRA, 401208</p>
-          <p><strong>SPM Factory Add:</strong> 04/20111, JABAR PADA, UMAR COMPOUND ROAD VASAI EAST MAHARASHTRA, 401208</p>
+          <p><strong>RS PHARMA Office Add:</strong> 04/20111, JABAR PADA, UMAR COMPOUND ROAD VASAI EAST MAHARASHTRA, 401208</p>
+          <p><strong>RS PHARMA Factory Add:</strong> 04/20111, JABAR PADA, UMAR COMPOUND ROAD VASAI EAST MAHARASHTRA, 401208</p>
         </div>
 
         {/* Image Below Map */}

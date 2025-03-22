@@ -132,12 +132,13 @@
 /* Address Text Styling */
 .map-address {
     text-align: left;  /* Align text left */
-    font-size: 16px;
+    font-size: 14px;
     color: #333;
     margin-top: 10px;
     padding: 10px 20px;
     background: #f8f8f8;  /* Light background */
     border-radius: 5px;
+    line-height: 2.8;
 }
 .map-address strong {
     color: #007bff; /* Highlight headings */
@@ -268,6 +269,18 @@
     .contact-container {
       padding: 10px;
     }
+    
+/* Address Text Styling */
+.map-address {
+  text-align: left;  /* Align text left */
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #f8f8f8;  /* Light background */
+  border-radius: 5px;
+  line-height: 1.8;
+}
   
     .contact-content,
     .contact-section {

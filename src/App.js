@@ -20,6 +20,8 @@ import BlogPage from './components/BlogPage/BlogPage';
 
 // ✅ Product Page Component
 import ProductPage from "./components/pages/ProductPage";
+import DownloadPage from './components/DownloadPage/DownloadPage';
+
 
 function App() {
   const [hideVideoPlayer, setHideVideoPlayer] = useState(true);
@@ -48,6 +50,7 @@ function App() {
           <Route path="/BlogPage" element={<BlogPage/>} /> 
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/DownloadPage" element={<DownloadPage />} />
 
           {/* ✅ Fixed Product Pages Route */}
           <Route path="/products/:category/:productId" element={<ProductPage />} />
