@@ -54,7 +54,7 @@ nav.nav-dark {
     font-size: 17px;
     font-weight: 500;
     margin: 0 15px;
-    color: black;
+    color:var(--white-color);
     cursor: pointer;
     transition: background 0.3s ease-in-out all, color 0.3s ease-in-out all;
     padding: 5px 10px;
