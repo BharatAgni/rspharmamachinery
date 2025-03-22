@@ -1,133 +1,103 @@
-import React, { useReducer, useState } from 'react';
-import './Contact.css';
-
-
-const initialState = { 
-  name: '', 
-  phone: '', 
-  email: '', 
-  message: '', 
-  access_key: 'e7ffcc26-13e1-46f4-bdbc-6aab252d341e' 
-};
-
-const formReducer = (state, action) => {
-  switch (action.type) {
-    case 'SET_FIELD':  
-      return { ...state, [action.field]: action.value };
-    case 'RESET_FIELD':  
-      return initialState; 
-    default:
-      return state;
-  }
-};
+import React from "react";
+import "./Contact.css";
+import about_img_1 from "../../assets/industries-photos-1.jpg";
+import about_img_2 from "../../assets/industries-photos-2.jpg";
 
 const Contact = () => {
-  const [state, dispatch] = useReducer(formReducer, initialState);
-  const [isLoading, setIsLoading] = useState(false);
-  const [messageResponse, setMessageResponse] = useState(null);
-
-  const handleChange = (e) => {
-    dispatch({ type: 'SET_FIELD', field: e.target.name, value: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-
-    if (!state.name || !state.phone || !state.email || !state.message) {
-      alert("⚠ Please fill all fields before submitting!");
-      setIsLoading(false);
-      return;
-    }
-
-    const json = JSON.stringify(state);
-
-    try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          accept: "application/json"
-        },
-        body: json
-      });
-
-      const response = await res.json();
-      setIsLoading(false);
-
-      if (response.success) {
-        setMessageResponse("✅ Message sent successfully!");
-        dispatch({ type: 'RESET_FIELD' });
-      } else {
-        setMessageResponse("❌ Message not sent. Please try again.");
-      }
-    } catch (error) {
-      setIsLoading(false);
-      setMessageResponse("⚠ An error occurred. Please try again.");
-      console.error("Fetch error:", error);
-    }
-  };
-
   return (
-    <div className="Contact-page">
-      <div className="contact-container">
-        <form onSubmit={handleSubmit} className="contact-form">
-          <h2>Get in Touch</h2>
-
-          <input 
-            type="text" 
-            name="name" 
-            value={state.name} 
-            onChange={handleChange} 
-            placeholder="Your Name"
-            required 
-          />
-
-          <input 
-            type="tel" 
-            name="phone" 
-            value={state.phone} 
-            onChange={handleChange} 
-            placeholder="Your Phone Number"
-            required 
-          />
-
-          <input 
-            type="email" 
-            name="email" 
-            value={state.email} 
-            onChange={handleChange} 
-            placeholder="Your Email"
-            required 
-          />
-
-          <textarea 
-            name="message" 
-            value={state.message} 
-            onChange={handleChange} 
-            placeholder="Your Message"
-            rows="4"
-            required
-          ></textarea>
-
-          <button type="submit">
-            {isLoading ? "Sending..." : "Send Message"}
-          </button>
-
-          {messageResponse && <span className="response">{messageResponse}</span>}
-        </form>
-
-        {/* Why Us Section */}
-        <div className="why-us">
-          <h3>Why Choose Us?</h3>
-          <ul>
-            <li>✔ High-Quality Products</li>
-            <li>✔ Excellent Customer Support</li>
-            <li>✔ Competitive Pricing</li>
-            <li>✔ Fast & Secure Services</li>
-          </ul>
+    <div className="contact-container">
+      <h2 className="contact-title">RS PHARMA MACHINERY Co., Ltd</h2>
+      <hr className="contact-divider" />
+      
+      <div className="contact-content">
+        <div className="contact-info">
+          <p><strong>Tel:</strong> +91 87440 16025</p>
+          <p><strong>Phone/Wechat/Whatsapp:</strong> +91 87440 16025</p>
+          <p><strong>E-mail:</strong> rspharmamachinery@gmail.com</p>
+          <p><strong>RS PHARMA Add:</strong>CVQM+HXJ, Pelhar, Maharashtra 401208</p>
+          <p><strong>RS PHARMA Factory Add:</strong> CVQM+HXJ, Pelhar, Maharashtra 401208</p>
+        </div>
+        <div className="contact-image">
+          <img src={about_img_1} alt="Company Building" />
         </div>
       </div>
+
+      {/* Header Section */}
+      <div className="agents-banner">
+        <p><strong>REGIONAL AGENTS WANTED, <em>Contact us Now</em></strong></p>
+      </div>
+
+      {/* Google Map Embed */}
+      <div className="map-container">
+        <h3>You Can Find Us In</h3>
+        <iframe
+          title="Company Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.3828933429095!2d72.88482619999999!3d19.4390517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9000446fb13%3A0x3a056fed4a982197!2sRS%20PHARMA%20MACHINERY!5e0!3m2!1sen!2sin!4v1742629751347!5m2!1sen!2sin"
+          width="100%"
+          height="400"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+        ></iframe>
+        {/* Image Below Map */}
+        <div className="location-image">
+          <img src={about_img_2} alt="Location Info" />
+        </div>
+        </div>
+
+      {/* New Section - Get in Touch Form */}
+   <div className="contact-section">
+      {/* Left Side: Form */}
+      <div className="contact-form">
+        <h2>Get in Touch with Us</h2>
+        <form>
+          <div className="form-group">
+            <input type="text" placeholder="Name *" required />
+            <input type="text" placeholder="Country *" required />
+          </div>
+          <div className="form-group">
+            <input type="email" placeholder="Email *" required />
+            <input type="text" placeholder="Tel *" required />
+          </div>
+          <div className="form-group">
+            <input type="text" placeholder="Company" />
+            <input type="text" placeholder="WhatsApp" />
+          </div>
+          <textarea placeholder="Inquiry *" required></textarea>
+          <button type="submit" className="submit-btn">SUBMIT</button>
+        </form>
+      </div>
+
+      {/* Right Side: Contact Info */}
+      <div className="contact-info-box">
+        <h2>Contact Us</h2>
+        <p>Our professional team will reply to you as soon as possible.</p>
+
+        <div className="contact-item">
+          <span className="icon">📧</span>
+          <div>
+            <strong>Email</strong>
+            <p>rspharmamachinery@gmail.com</p>
+          </div>
+        </div>
+
+        <div className="contact-item">
+          <span className="icon">📞</span>
+          <div>
+            <strong>Tel</strong>
+            <p>+91 87440 16025 / +91 7757873724</p>
+          </div>
+        </div>
+
+        <div className="contact-item">
+          <span className="icon">💬</span>
+          <div>
+            <strong>WhatsApp/Skype</strong>
+            <p>+91 87440 16025</p>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   );
 };
