@@ -46,7 +46,7 @@ const Contact = () => {
 
       <div className="contact-content">
         <div className="contact-info">
-          <p><strong>Tel:</strong> +91 87440 16025</p>
+          <p><strong>Tel:</strong> +91 87440 16025 /  +91 7757873724</p>
           <p><strong>Phone/Whatsapp:</strong> +91 87440 16025</p>
           <p><strong>E-mail:</strong> rspharmamachinery@gmail.com</p>
           <p><strong>RS PHARMA Add:</strong>CVQM+HXJ, Pelhar, Maharashtra 401208</p>
