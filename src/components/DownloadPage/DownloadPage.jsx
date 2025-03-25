@@ -1,6 +1,6 @@
 import React from "react";
 import "./DownloadPage.css";
-import img_1 from "../../assets/industries-photos-8.jpg"
+import img_1 from "../../assets/industries-photos-3.jpg"
 
 import img1 from "../../assets/CAITALOG/CAITALOG-2.jpg";
 import img2 from "../../assets/CAITALOG/CAITALOG-3.jpg";

@@ -9,6 +9,7 @@
   width: 100%;
   max-height: 200px;
   object-fit: cover;
+  filter: brightness(.9) hue-rotate(200deg);
 }
 
 .download-title {
@@ -17,7 +18,9 @@
   font-weight: bold;
   color: #ff0101;
   padding: 15px;
-  background-image: url('../../assets/map-h3.webp'); /* अपनी image का path सही करो */
+  background-image: 
+  linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)), 
+  url('../../assets/map-h3.webp');
   background-size: cover;
   background-position: center;
   display: inline-block;
@@ -99,5 +102,12 @@
   .download-btn {
     font-size: 14px;
     padding: 8px 12px;
+  }
+  .banner-img {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+    filter: brightness(.8) hue-rotate(200deg);
+    
   }
 }

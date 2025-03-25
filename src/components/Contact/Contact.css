@@ -47,10 +47,10 @@
 
   
   .contact-info {
-    background: #ffffff;
+    /* background: #ffffff; */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
     font-size: 16px;
     line-height: 3.8;
     max-width: 600px;
