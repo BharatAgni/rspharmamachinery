@@ -74,11 +74,11 @@ const Navbar = () => {
                         <Link to="/contact">Contact</Link>
                     </li>
                     <li>
-                    <Link to="/DownloadPage">Download</Link>
-                        </li>
-                    <li>
                         <Link to="/BlogPage">Blog</Link>
                     </li>
+                    <li style={{ backgroundColor: "red" }}>
+                    <Link to="/DownloadPage">Download</Link>
+                        </li>
                 </ul>
 
                 <div className={`menu-icon ${navState ? "open" : ""}`} onClick={handleNavState}>
