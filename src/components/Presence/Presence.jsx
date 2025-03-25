@@ -1,5 +1,6 @@
 import React from 'react'
 import './Presence.css'
+import { FaPills, FaFlask, FaUtensils, FaTshirt, FaCheese, FaCogs, FaSeedling } from "react-icons/fa";
 import Title from '../Title/Title'
 import Presence_img_1 from "../../assets/FLUIID BED PROCESSOR 1.png"
 import Presence_img_2 from "../../assets/Rapid Mixer Granulator.jpg"
@@ -7,42 +8,17 @@ import Presence_img_3 from "../../assets/Ointment Manufacturing Plant 3.jpg"
 import Presence_img_4 from "../../assets/VaccumeTray dryer.jpg"
 const Presence = () => {
   return (
-    <div className='Presence-main wrapper'>
-  <Title title="OUR INDUSTRY PRESENCE" className="title" />
-  <ul style={{ 
-  display: "flex", 
-  flexWrap: "wrap", 
-  justifyContent: "flex-start", 
-  gap: "30px", 
-  paddingLeft: "20px", 
-  listStyleType: "disc", 
-  listStylePosition: "inside", 
-  fontWeight: "bold",
-  maxWidth: "900px" ,
-  marginBottom: "50px",
-  marginTop: "50px"
-}}>
-  <li>Pharmaceutical</li>
-  <li>Chemical</li>
-  <li>Food</li>
-  <li>Textile</li>
-  <li>Dairy</li>
-  <li>Engineering</li>
-  <li>Agro-Chemical</li>
-</ul>
-
-<style>
-{`
-  @media (max-width: 768px) {
-    ul {
-      flex-direction: column; 
-      gap: 10px; 
-      max-width: 100%;
-    }
-  }
-`}
-</style>
-
+    <div className="Presence-main wrapper">
+    <Title title="OUR INDUSTRY PRESENCE" className="title" />
+    <ul className="industry-list">
+      <li><FaPills /> Pharmaceutical</li>
+      <li><FaFlask /> Chemical</li>
+      <li><FaUtensils /> Food</li>
+      <li><FaTshirt /> Textile</li>
+      <li><FaCheese /> Dairy</li>
+      <li><FaCogs /> Engineering</li>
+      <li><FaSeedling /> Agro-Chemical</li>
+    </ul>
 
   
         <p style={{ color: "black", marginBottom: "10px", lineHeight: "1.5", padding: "10px", textAlign: "left" }}>

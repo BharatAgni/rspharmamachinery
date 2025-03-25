@@ -13,7 +13,32 @@
     margin-bottom: 20px; /* Niche gap */
     margin-top: 1px;
   }
-  
+
+  .industry-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 50px; /* Space between items */
+    max-width: 900px;
+    padding-left: 20px;
+    margin: 60px 80px;
+    list-style: none; /* Removes default dots */
+  }
+
+  .industry-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon & text */
+    font-weight: bold;
+    position: relative;
+  }
+
+  .industry-list li::before {
+    content: "•"; /* Custom dot */
+    position: absolute;
+    left: -15px; /* Align dot properly */
+    font-size: 24px;
+    color: black;
+  }
 
 .Presence{
     padding-top: 20px; ;
@@ -91,6 +116,14 @@
         margin-bottom: 20px;
     }
 }
+@media (max-width: 768px) {
+    .industry-list {
+      grid-template-columns: 1fr; /* Single column layout for mobile */
+      gap: 40px; 
+      margin: 50px 0;
+    }
+  }  
+
 @media (max-width:700px){
 
     .Presence .PRODUCTS{
