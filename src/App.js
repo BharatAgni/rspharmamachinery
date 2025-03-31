@@ -47,7 +47,7 @@ function App() {
               </>
             }
             />
-          <Route path="/BlogPage" element={<BlogPage/>} /> 
+          {/* <Route path="/BlogPage" element={<BlogPage/>} />  */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/DownloadPage" element={<DownloadPage />} />
