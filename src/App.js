@@ -16,11 +16,12 @@ import Clients from './components/Clients/Clients';
 import Testimonial from './components/Testimonial/Testimonial';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import BlogPage from './components/BlogPage/BlogPage';
 
-// ✅ Product Page Component
+// import BlogPage from './components/BlogPage/BlogPage';
+
 import ProductPage from "./components/pages/ProductPage";
 import DownloadPage from './components/DownloadPage/DownloadPage';
+import Certifications from './components/Certifications/Certifications';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
             }
             />
           {/* <Route path="/BlogPage" element={<BlogPage/>} />  */}
+
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/DownloadPage" element={<DownloadPage />} />
@@ -55,6 +57,7 @@ function App() {
           {/* ✅ Fixed Product Pages Route */}
           <Route path="/products/:category/:productId" element={<ProductPage />} />
         </Routes>
+        <Certifications/>
         <Footer />
 
         {/* ✅ Gallery & Video Player */}
