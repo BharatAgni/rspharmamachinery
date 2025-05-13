@@ -89,7 +89,7 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            {showPopup && (
+            {/* {showPopup && (
                 <div className="blog-popup show">
                     <p>🔥 Don't miss our latest blog updates!</p>
                     <Link to="/BlogPage" className="popup-btn">
@@ -99,7 +99,7 @@ const Navbar = () => {
                         ✖
                     </span>
                 </div>
-            )}
+            )} */}
         </>
     );
 };
