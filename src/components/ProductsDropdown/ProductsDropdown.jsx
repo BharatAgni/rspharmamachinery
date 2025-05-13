@@ -1,132 +1,116 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import "./ProductsDropdown.css";
+import React, { useState, useRef, useEffect } from 'react';
+import './ProductsDropdown.css';
 
-const ProductsDropdown = () => {
-    const [showDropdown, setShowDropdown] = useState(false);
-    const [activeCategory, setActiveCategory] = useState(null);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-    const navigate = useNavigate();
+const sectionsData = [
+  {
+    title: 'Liquid Section',
+    items: [
+      'Sparkler Filter Press',
+      'Zero Hold Up Filter Press',
+      'Inline Homogenizer',
+      'ML Catch Pot',
+    ],
+  },
+  {
+    title: 'Drying',
+    items: [
+      'Tray Dryer',
+      'Vacuum Tray Dryer',
+      'Fluid Bed Dryer',
+      'Rotocon Vacuum Dryer (RCVD)',
+    ],
+  },
+  {
+    title: 'Milling',
+    items: ['Multi Mill', 'Colloid Mill'],
+  },
+  {
+    title: 'Blending',
+    items: ['Octagonal Blender', 'Double Cone Blender', 'Ribbon Blender'],
+  },
+  {
+    title: 'Coating',
+    items: ['Coating Pan', 'Auto Coater'],
+  },
+  {
+    title: 'Others',
+    items: ['Vibro Sifter', 'Rapid Mixer Granulator', 'IPC Bin', 'WFI Storage Tanks'],
+  },
+];
 
-    useEffect(() => {
-        const checkMobile = () => setIsMobile(window.innerWidth <= 768);
-        window.addEventListener("resize", checkMobile);
-        return () => window.removeEventListener("resize", checkMobile);
-    }, []);
+const Dropdown = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [openSections, setOpenSections] = useState({});
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const dropdownRef = useRef(null);
 
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (!event.target.closest(".dropdown")) {
-                setTimeout(() => {
-                    setShowDropdown(false);
-                    setActiveCategory(null);
-                }, 200); // Delay added
-            }
-        };
-        document.addEventListener("click", handleClickOutside);
-        return () => document.removeEventListener("click", handleClickOutside);
-    }, []);
-
-    const handleProductClick = (path) => {
-        console.log("Navigating to:", path);
-        navigate(path);
-
-        // ✅ Fix: Dropdown turant close hone ke issue ko fix kiya
-        setTimeout(() => {
-            setShowDropdown(false);
-            setActiveCategory(null);
-        }, 200); // Delay added to allow click event
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
     };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
-    const categories = [
-        {
-            name: "Ointment & Liquid Section",
-            products: [
-                { name: "Ointment Manufacturing Plant", path: "/products/ointment-liquid/ointment-manufacturing-plant" },
-                { name: "Liquid Oral Processing Plant", path: "/products/ointment-liquid/liquid-oral-processing-plant" },
-                { name: "Manufacturing Vessels", path: "/products/ointment-liquid/manufacturing-vessels" },
-                // { name: "Storage Tanks", path: "/products/ointment-liquid/storage-tanks" },
-                { name: "Sparkler Filter Press", path: "/products/ointment-liquid/sparkler-filter-press" }
-            ]
-        },
-        {
-            name: "Granulation/ Tablet Section",
-            products: [
-                { name: "Fluid bed Processor", path: "/products/granulation/fluid-bed-processor" },
-                { name: "Power Transfer Technology", path: "/products/granulation/power-transfer-technology" },
-                { name: "Rapid Mixture & Granulator", path: "/products/granulation/rapid-mixture-granulator" },
-                { name: "Vibro-Shifter", path: "/products/granulation/vibro-shifter" },
-                { name: "Multimill", path: "/products/granulation/multimill" },
-                { name: "Co-Mill", path: "/products/granulation/co-mill" },
-                { name: "Colloidal Mill", path: "/products/granulation/colloidal-mill" },
-                { name: "Reactor", path: "/products/granulation/reactor" }
-            ]
-        },
-        {
-            name: "Drying / Processing Equipments",
-            products: [
-                { name: "Vacuum Tray Dryer", path: "/products/drying-processing/vacuum-tray-dryer" },
-                { name: "Air Tray Dryer", path: "/products/drying-processing/air-tray-dryer" },
-                { name: "Auto Coater", path: "/products/drying-processing/auto-coater" },
-                { name: "Coating Pan", path: "/products/drying-processing/coating-pan" }
-            ]
-        },
-        {
-            name: "Others",
-            products: [
-                { name: "Lifter", path: "/products/others/lifter" },
-                { name: "Stand Homogenizer", path: "/products/others/stand-homogenizer" },
-                { name: "Platform & Staircase", path: "/products/others/platform-staircase" },
-                { name: "Inline Homogenizer", path: "/products/others/inline-homogenizer" }
-            ]
-        }
-    ];
+  const toggleDropdown = () => setIsOpen((prev) => !prev);
 
-    return (
-        <li
-            className={`dropdown ${showDropdown ? "active" : ""}`}
-            onMouseEnter={() => !isMobile && setShowDropdown(true)}
-            onMouseLeave={() => !isMobile && setShowDropdown(false)}
-            onClick={() => isMobile && setShowDropdown(prev => !prev)}
-        >
-            Products
-            <ul className={`dropdown-menu ${showDropdown ? "open" : ""}`}>
-                {categories.map((category, index) => (
-                    <li
-                        key={index}
-                        className={`dropdown-category ${activeCategory === category.name ? "active" : ""}`}
-                        onMouseEnter={() => !isMobile && setActiveCategory(category.name)}
-                        onClick={(e) => {
-                            if (isMobile) {
-                                e.stopPropagation();
-                                setTimeout(() => {
-                                    setActiveCategory(prev => (prev === category.name ? null : category.name));
-                                }, 200); // ✅ Fix added
-                            }
-                        }}
-                    >
-                        {category.name}
-                        <span className={`arrow ${activeCategory === category.name ? "rotate" : ""}`}>▶</span>
-                        <ul className={`products-list ${activeCategory === category.name ? "visible" : ""}`}>
-                            {category.products.map((product, idx) => (
-                                <li key={idx} className="clickable-item"
-                                    onClick={(e) => {
-                                        e.stopPropagation(); // ✅ Fix added
-                                        handleProductClick(product.path);
-                                    }}>
-                                    {product.name}
-                                </li>
-                            ))}
-                        </ul>
-                    </li>
-                ))}
-            </ul>
-        </li>
-    );
+  const toggleSection = (title) => {
+    if (!isMobile) return; // Do nothing on desktop
+    setOpenSections((prev) => ({
+      ...prev,
+      [title]: !prev[title],
+    }));
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+        setOpenSections({});
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  return (
+    <div className="dropdown-container" ref={dropdownRef}>
+      <button className="dropdown-button" onClick={toggleDropdown}>
+        Products <span className={`arrow-icon ${isOpen ? 'rotate' : ''}`}>▾</span>
+      </button>
+
+      {isOpen && (
+        <div className="dropdown-menu">
+          {sectionsData.map((section) => (
+            <div className="dropdown-column" key={section.title}>
+              <h4
+                onClick={() => toggleSection(section.title)}
+                style={{ cursor: isMobile ? 'pointer' : 'default' }}
+              >
+                {section.title}
+                {isMobile && (
+                  <span style={{ float: 'right' }}>
+                    {openSections[section.title] ? '-' : '+'}
+                  </span>
+                )}
+              </h4>
+
+              {/* Show all items on desktop, or show only if open on mobile */}
+              {(openSections[section.title] || !isMobile) && (
+                <ul>
+                  {section.items.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 };
 
-export default ProductsDropdown;
-
-
+export default Dropdown;
 
 

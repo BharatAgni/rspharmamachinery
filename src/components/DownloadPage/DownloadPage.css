@@ -1,7 +1,7 @@
 .download-page {
   text-align: center;
   padding: 20px;
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
   margin-top: 90px;
 }
 
@@ -16,7 +16,7 @@
   font-size: 28px;
   margin: 20px 0;
   font-weight: bold;
-  color: #ff0101;
+  color: rgb(0, 0, 0);
   padding: 15px;
   background-image: 
   linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)), 

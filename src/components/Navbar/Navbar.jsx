@@ -18,7 +18,7 @@ const Navbar = () => {
     const handleNavState = () => setNavState(!navState);
 
     useEffect(() => {
-        const handleScroll = () => {
+        const handleScroll = () => {                          
             setSticky(window.scrollY > 50);
         };
 
@@ -56,7 +56,7 @@ const Navbar = () => {
         <>
             <nav className={sticky ? "nav-dark" : ""}>
             <div className="nav-brand">
-                <Link to="/">
+                <Link to="/" onClick={handleHomeClick}>
                     <img src={logo} alt="RS PHARMA MACHINERY Logo" className="logo" />
                 </Link>
                 </div>  
