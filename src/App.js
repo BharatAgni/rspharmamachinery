@@ -21,7 +21,7 @@ import Footer from './components/Footer/Footer';
 
 import DownloadPage from './components/DownloadPage/DownloadPage';
 import Certifications from './components/Certifications/Certifications';
-import ProductPage from './components/Productpage/ProductPage'; // ✅ No dot at the end
+import ProductPage from './components/Productpage/Productpage'; // ✅ No dot at the end
 
 
 
