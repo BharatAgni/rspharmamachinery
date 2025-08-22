@@ -19,9 +19,11 @@ import Footer from './components/Footer/Footer';
 
 // import BlogPage from './components/BlogPage/BlogPage';
 
-import ProductPage from "./components/pages/ProductPage";
 import DownloadPage from './components/DownloadPage/DownloadPage';
 import Certifications from './components/Certifications/Certifications';
+import ProductPage from './components/Productpage/ProductPage'; // ✅ No dot at the end
+
+
 
 
 function App() {
@@ -45,6 +47,8 @@ function App() {
                 <Title title="Industries" titleText="Explore More About Industries" />
                 <Clients />
                 <Testimonial />
+                <ProductPage/>
+                
               </>
             }
             />
@@ -53,9 +57,12 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/DownloadPage" element={<DownloadPage />} />
+          <Route path="/product/:productName" element={<ProductPage />} />
+
+
 
           {/* ✅ Fixed Product Pages Route */}
-          <Route path="/products/:category/:productId" element={<ProductPage />} />
+    
         </Routes>
         <Certifications/>
         <Footer />

@@ -1,40 +1,58 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './ProductsDropdown.css';
 
 const sectionsData = [
   {
-    title: 'Liquid Section',
+    title: 'Ointment & Liquid Section',
     items: [
+      'Ointment Manufacturing Plant',
+      'Liquid Oral Processing plant',
+      'Manufacturing Plant',
+      'Storage Tank',
       'Sparkler Filter Press',
-      'Zero Hold Up Filter Press',
-      'Inline Homogenizer',
-      'ML Catch Pot',
     ],
   },
   {
-    title: 'Drying',
+    title: 'Drying/Processing Equipments',
     items: [
-      'Tray Dryer',
+      'Air Tray Dryer',
       'Vacuum Tray Dryer',
-      'Fluid Bed Dryer',
-      'Rotocon Vacuum Dryer (RCVD)',
+      'Auto Coter',
+      'Coating Pan',
     ],
   },
   {
-    title: 'Milling',
-    items: ['Multi Mill', 'Colloid Mill'],
+    title: 'Blending & Mixing',
+    items: [
+      'Octagonal Blender',
+      'Double Cone Blender',
+      'Ribbon Blender',
+      'V-Blender',
+      'Vacuum Blender',
+    ],
   },
   {
-    title: 'Blending',
-    items: ['Octagonal Blender', 'Double Cone Blender', 'Ribbon Blender'],
-  },
-  {
-    title: 'Coating',
-    items: ['Coating Pan', 'Auto Coater'],
+    title: 'Granulation/Tablet Section',
+    items: [
+      'Fluid Bed Processor',
+      'Rapid Mixer Granulator',
+      'Multi Mill',
+      'Vibro Sifter',
+      'Co-Mill',
+      'Colloidal Mill',
+      'Powder Transfer Technology',
+      'Reactor',
+    ],
   },
   {
     title: 'Others',
-    items: ['Vibro Sifter', 'Rapid Mixer Granulator', 'IPC Bin', 'WFI Storage Tanks'],
+    items: [
+      'Lifter',
+      'Stand Homogenizer',
+      'Platform & Staircase',
+      'Inline Homogenizer',
+    ],
   },
 ];
 
@@ -55,7 +73,7 @@ const Dropdown = () => {
   const toggleDropdown = () => setIsOpen((prev) => !prev);
 
   const toggleSection = (title) => {
-    if (!isMobile) return; // Do nothing on desktop
+    if (!isMobile) return;
     setOpenSections((prev) => ({
       ...prev,
       [title]: !prev[title],
@@ -95,11 +113,20 @@ const Dropdown = () => {
                 )}
               </h4>
 
-              {/* Show all items on desktop, or show only if open on mobile */}
               {(openSections[section.title] || !isMobile) && (
                 <ul>
                   {section.items.map((item, i) => (
-                    <li key={i}>{item}</li>
+                    <li key={i}>
+                      <Link
+                        to={`/product/${encodeURIComponent(item)}`}
+                        onClick={() => {
+                          setIsOpen(false);
+                          setOpenSections({});
+                        }}
+                      >
+                        {item}
+                      </Link>
+                    </li>
                   ))}
                 </ul>
               )}
@@ -112,5 +139,6 @@ const Dropdown = () => {
 };
 
 export default Dropdown;
+
 
 
